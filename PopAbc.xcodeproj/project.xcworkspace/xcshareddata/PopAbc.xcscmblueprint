@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E340F2469CD4D123C926B640EFA4117EBD72D653" : 0,
+    "87907EAD08F9AC05484849759EAC4E8AE0659685" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "239CCC68-4A33-4195-A3A1-3361D174419A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E340F2469CD4D123C926B640EFA4117EBD72D653" : "Alembic\/",
+    "87907EAD08F9AC05484849759EAC4E8AE0659685" : "SoyLib\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PopAbc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PopAbc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SoylentGraham\/SoyLib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "87907EAD08F9AC05484849759EAC4E8AE0659685"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SoylentGraham\/alembic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E340F2469CD4D123C926B640EFA4117EBD72D653"
+    }
+  ]
+}

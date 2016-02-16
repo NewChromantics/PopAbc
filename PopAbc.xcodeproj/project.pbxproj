@@ -7,6 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0BFBF51C73819E00257274 /* ArchiveInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBB41C73819E00257274 /* ArchiveInfo.cpp */; };
+		BF0BFBF61C73819E00257274 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFBB81C73819E00257274 /* CMakeLists.txt */; };
+		BF0BFBF71C73819E00257274 /* ErrorHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBB91C73819E00257274 /* ErrorHandler.cpp */; };
+		BF0BFBF81C73819E00257274 /* IArchive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBBC1C73819E00257274 /* IArchive.cpp */; };
+		BF0BFBF91C73819E00257274 /* IArrayProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBBE1C73819E00257274 /* IArrayProperty.cpp */; };
+		BF0BFBFA1C73819E00257274 /* ICompoundProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBC11C73819E00257274 /* ICompoundProperty.cpp */; };
+		BF0BFBFB1C73819E00257274 /* IObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBC31C73819E00257274 /* IObject.cpp */; };
+		BF0BFBFC1C73819E00257274 /* ISampleSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBC51C73819E00257274 /* ISampleSelector.cpp */; };
+		BF0BFBFD1C73819E00257274 /* IScalarProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBC71C73819E00257274 /* IScalarProperty.cpp */; };
+		BF0BFBFE1C73819E00257274 /* OArchive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBCD1C73819E00257274 /* OArchive.cpp */; };
+		BF0BFBFF1C73819E00257274 /* OArrayProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBCF1C73819E00257274 /* OArrayProperty.cpp */; };
+		BF0BFC001C73819E00257274 /* OCompoundProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBD21C73819E00257274 /* OCompoundProperty.cpp */; };
+		BF0BFC011C73819E00257274 /* OObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBD41C73819E00257274 /* OObject.cpp */; };
+		BF0BFC021C73819E00257274 /* OScalarProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBD61C73819E00257274 /* OScalarProperty.cpp */; };
+		BF0BFC031C73819E00257274 /* Reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBDC1C73819E00257274 /* Reference.cpp */; };
+		BF0BFC041C73819E00257274 /* SourceName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFBDE1C73819E00257274 /* SourceName.cpp */; };
+		BF0BFC561C7384C600257274 /* ArchiveReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC241C7384C600257274 /* ArchiveReader.cpp */; };
+		BF0BFC571C7384C600257274 /* ArchiveWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC261C7384C600257274 /* ArchiveWriter.cpp */; };
+		BF0BFC581C7384C600257274 /* ArrayPropertyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC281C7384C600257274 /* ArrayPropertyReader.cpp */; };
+		BF0BFC591C7384C600257274 /* ArrayPropertyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC2A1C7384C600257274 /* ArrayPropertyWriter.cpp */; };
+		BF0BFC5A1C7384C600257274 /* ArraySample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC2C1C7384C600257274 /* ArraySample.cpp */; };
+		BF0BFC5B1C7384C600257274 /* BasePropertyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC2F1C7384C600257274 /* BasePropertyReader.cpp */; };
+		BF0BFC5C1C7384C600257274 /* BasePropertyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC311C7384C600257274 /* BasePropertyWriter.cpp */; };
+		BF0BFC5D1C7384C600257274 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFC331C7384C600257274 /* CMakeLists.txt */; };
+		BF0BFC5E1C7384C600257274 /* CompoundPropertyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC341C7384C600257274 /* CompoundPropertyReader.cpp */; };
+		BF0BFC5F1C7384C600257274 /* CompoundPropertyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC361C7384C600257274 /* CompoundPropertyWriter.cpp */; };
+		BF0BFC601C7384C600257274 /* Foundation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC3A1C7384C600257274 /* Foundation.cpp */; };
+		BF0BFC611C7384C600257274 /* ObjectReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC3E1C7384C600257274 /* ObjectReader.cpp */; };
+		BF0BFC621C7384C600257274 /* ObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC401C7384C600257274 /* ObjectWriter.cpp */; };
+		BF0BFC631C7384C600257274 /* ReadArraySampleCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC431C7384C600257274 /* ReadArraySampleCache.cpp */; };
+		BF0BFC641C7384C600257274 /* ScalarPropertyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC451C7384C600257274 /* ScalarPropertyReader.cpp */; };
+		BF0BFC651C7384C600257274 /* ScalarPropertyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC471C7384C600257274 /* ScalarPropertyWriter.cpp */; };
+		BF0BFC661C7384C600257274 /* ScalarSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC491C7384C600257274 /* ScalarSample.cpp */; };
+		BF0BFC671C7384C600257274 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFC4D1C7384C600257274 /* CMakeLists.txt */; };
+		BF0BFC6C1C7384C600257274 /* TimeSampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC521C7384C600257274 /* TimeSampling.cpp */; };
+		BF0BFC6D1C7384C600257274 /* TimeSamplingType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC541C7384C600257274 /* TimeSamplingType.cpp */; };
+		BF0BFC881C73877100257274 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFC701C73877100257274 /* CMakeLists.txt */; };
+		BF0BFC891C73877100257274 /* Config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = BF0BFC721C73877100257274 /* Config.h.in */; };
+		BF0BFC8A1C73877100257274 /* Murmur3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC781C73877100257274 /* Murmur3.cpp */; };
+		BF0BFC8B1C73877100257274 /* Naming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC7A1C73877100257274 /* Naming.cpp */; };
+		BF0BFC8C1C73877100257274 /* SpookyV2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC7E1C73877100257274 /* SpookyV2.cpp */; };
+		BF0BFC921C73877100257274 /* TokenMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF0BFC861C73877100257274 /* TokenMap.cpp */; };
+		BF0BFC941C73884100257274 /* lib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC931C73884100257274 /* lib */; };
+		BF0BFC9A1C73886100257274 /* libHalf.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC951C73886100257274 /* libHalf.dylib */; };
+		BF0BFC9B1C73886100257274 /* libIex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC961C73886100257274 /* libIex.dylib */; };
+		BF0BFC9C1C73886100257274 /* libIexMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC971C73886100257274 /* libIexMath.dylib */; };
+		BF0BFC9D1C73886100257274 /* libIlmThread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC981C73886100257274 /* libIlmThread.dylib */; };
+		BF0BFC9E1C73886100257274 /* libImath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BFC991C73886100257274 /* libImath.dylib */; };
 		BF1191191BDAF98000DD627C /* SoyMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF1191171BDAF98000DD627C /* SoyMedia.cpp */; };
 		BF11911A1BDAF98000DD627C /* SoyMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF1191171BDAF98000DD627C /* SoyMedia.cpp */; };
 		BF11911B1BDAF98000DD627C /* SoyMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF1191171BDAF98000DD627C /* SoyMedia.cpp */; };
@@ -158,6 +206,151 @@
 /* Begin PBXFileReference section */
 		BF06DF031B2ACD5A006F241F /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Android.mk; path = jni/Android.mk; sourceTree = "<group>"; };
 		BF06DF041B2ACD5A006F241F /* Application.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Application.mk; path = jni/Application.mk; sourceTree = "<group>"; };
+		BF0BFBB31C73819E00257274 /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
+		BF0BFBB41C73819E00257274 /* ArchiveInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveInfo.cpp; sourceTree = "<group>"; };
+		BF0BFBB51C73819E00257274 /* ArchiveInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveInfo.h; sourceTree = "<group>"; };
+		BF0BFBB61C73819E00257274 /* Argument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Argument.h; sourceTree = "<group>"; };
+		BF0BFBB71C73819E00257274 /* Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		BF0BFBB81C73819E00257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFBB91C73819E00257274 /* ErrorHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorHandler.cpp; sourceTree = "<group>"; };
+		BF0BFBBA1C73819E00257274 /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		BF0BFBBB1C73819E00257274 /* Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foundation.h; sourceTree = "<group>"; };
+		BF0BFBBC1C73819E00257274 /* IArchive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IArchive.cpp; sourceTree = "<group>"; };
+		BF0BFBBD1C73819E00257274 /* IArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IArchive.h; sourceTree = "<group>"; };
+		BF0BFBBE1C73819E00257274 /* IArrayProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IArrayProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBBF1C73819E00257274 /* IArrayProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IArrayProperty.h; sourceTree = "<group>"; };
+		BF0BFBC01C73819E00257274 /* IBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBaseProperty.h; sourceTree = "<group>"; };
+		BF0BFBC11C73819E00257274 /* ICompoundProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICompoundProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBC21C73819E00257274 /* ICompoundProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICompoundProperty.h; sourceTree = "<group>"; };
+		BF0BFBC31C73819E00257274 /* IObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IObject.cpp; sourceTree = "<group>"; };
+		BF0BFBC41C73819E00257274 /* IObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IObject.h; sourceTree = "<group>"; };
+		BF0BFBC51C73819E00257274 /* ISampleSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ISampleSelector.cpp; sourceTree = "<group>"; };
+		BF0BFBC61C73819E00257274 /* ISampleSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISampleSelector.h; sourceTree = "<group>"; };
+		BF0BFBC71C73819E00257274 /* IScalarProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IScalarProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBC81C73819E00257274 /* IScalarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IScalarProperty.h; sourceTree = "<group>"; };
+		BF0BFBC91C73819E00257274 /* ISchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISchema.h; sourceTree = "<group>"; };
+		BF0BFBCA1C73819E00257274 /* ISchemaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISchemaObject.h; sourceTree = "<group>"; };
+		BF0BFBCB1C73819E00257274 /* ITypedArrayProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITypedArrayProperty.h; sourceTree = "<group>"; };
+		BF0BFBCC1C73819E00257274 /* ITypedScalarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITypedScalarProperty.h; sourceTree = "<group>"; };
+		BF0BFBCD1C73819E00257274 /* OArchive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OArchive.cpp; sourceTree = "<group>"; };
+		BF0BFBCE1C73819E00257274 /* OArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OArchive.h; sourceTree = "<group>"; };
+		BF0BFBCF1C73819E00257274 /* OArrayProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OArrayProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBD01C73819E00257274 /* OArrayProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OArrayProperty.h; sourceTree = "<group>"; };
+		BF0BFBD11C73819E00257274 /* OBaseProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBaseProperty.h; sourceTree = "<group>"; };
+		BF0BFBD21C73819E00257274 /* OCompoundProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCompoundProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBD31C73819E00257274 /* OCompoundProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCompoundProperty.h; sourceTree = "<group>"; };
+		BF0BFBD41C73819E00257274 /* OObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OObject.cpp; sourceTree = "<group>"; };
+		BF0BFBD51C73819E00257274 /* OObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OObject.h; sourceTree = "<group>"; };
+		BF0BFBD61C73819E00257274 /* OScalarProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OScalarProperty.cpp; sourceTree = "<group>"; };
+		BF0BFBD71C73819E00257274 /* OScalarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OScalarProperty.h; sourceTree = "<group>"; };
+		BF0BFBD81C73819E00257274 /* OSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSchema.h; sourceTree = "<group>"; };
+		BF0BFBD91C73819E00257274 /* OSchemaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSchemaObject.h; sourceTree = "<group>"; };
+		BF0BFBDA1C73819E00257274 /* OTypedArrayProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTypedArrayProperty.h; sourceTree = "<group>"; };
+		BF0BFBDB1C73819E00257274 /* OTypedScalarProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTypedScalarProperty.h; sourceTree = "<group>"; };
+		BF0BFBDC1C73819E00257274 /* Reference.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Reference.cpp; sourceTree = "<group>"; };
+		BF0BFBDD1C73819E00257274 /* Reference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reference.h; sourceTree = "<group>"; };
+		BF0BFBDE1C73819E00257274 /* SourceName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SourceName.cpp; sourceTree = "<group>"; };
+		BF0BFBDF1C73819E00257274 /* SourceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceName.h; sourceTree = "<group>"; };
+		BF0BFBE11C73819E00257274 /* ArchiveTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE21C73819E00257274 /* ArrayPropertyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayPropertyTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE31C73819E00257274 /* CacheControlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CacheControlTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE41C73819E00257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFBE51C73819E00257274 /* CompileTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompileTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE61C73819E00257274 /* CyclicPropertyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicPropertyTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE71C73819E00257274 /* IdentityPropertyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdentityPropertyTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE81C73819E00257274 /* InstanceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InstanceTest.cpp; sourceTree = "<group>"; };
+		BF0BFBE91C73819E00257274 /* ObjectsAndPropertiesTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectsAndPropertiesTest.cpp; sourceTree = "<group>"; };
+		BF0BFBEA1C73819E00257274 /* ObjectTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectTests.cpp; sourceTree = "<group>"; };
+		BF0BFBEB1C73819E00257274 /* OctessenceBug16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OctessenceBug16.cpp; sourceTree = "<group>"; };
+		BF0BFBEC1C73819E00257274 /* OctessenceBug17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OctessenceBug17.cpp; sourceTree = "<group>"; };
+		BF0BFBED1C73819E00257274 /* ParentingTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParentingTest.cpp; sourceTree = "<group>"; };
+		BF0BFBEE1C73819E00257274 /* PropertyTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyTests.cpp; sourceTree = "<group>"; };
+		BF0BFBEF1C73819E00257274 /* RedundantDataTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedundantDataTest.cpp; sourceTree = "<group>"; };
+		BF0BFBF01C73819E00257274 /* test1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test1.cpp; sourceTree = "<group>"; };
+		BF0BFBF11C73819E00257274 /* TypedArraySampleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TypedArraySampleTest.cpp; sourceTree = "<group>"; };
+		BF0BFBF21C73819E00257274 /* UniformPropertyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UniformPropertyTest.cpp; sourceTree = "<group>"; };
+		BF0BFBF31C73819E00257274 /* TypedArraySample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypedArraySample.h; sourceTree = "<group>"; };
+		BF0BFBF41C73819E00257274 /* TypedPropertyTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypedPropertyTraits.h; sourceTree = "<group>"; };
+		BF0BFC231C7384C600257274 /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
+		BF0BFC241C7384C600257274 /* ArchiveReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveReader.cpp; sourceTree = "<group>"; };
+		BF0BFC251C7384C600257274 /* ArchiveReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveReader.h; sourceTree = "<group>"; };
+		BF0BFC261C7384C600257274 /* ArchiveWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC271C7384C600257274 /* ArchiveWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveWriter.h; sourceTree = "<group>"; };
+		BF0BFC281C7384C600257274 /* ArrayPropertyReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayPropertyReader.cpp; sourceTree = "<group>"; };
+		BF0BFC291C7384C600257274 /* ArrayPropertyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayPropertyReader.h; sourceTree = "<group>"; };
+		BF0BFC2A1C7384C600257274 /* ArrayPropertyWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayPropertyWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC2B1C7384C600257274 /* ArrayPropertyWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayPropertyWriter.h; sourceTree = "<group>"; };
+		BF0BFC2C1C7384C600257274 /* ArraySample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArraySample.cpp; sourceTree = "<group>"; };
+		BF0BFC2D1C7384C600257274 /* ArraySample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraySample.h; sourceTree = "<group>"; };
+		BF0BFC2E1C7384C600257274 /* ArraySampleKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraySampleKey.h; sourceTree = "<group>"; };
+		BF0BFC2F1C7384C600257274 /* BasePropertyReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasePropertyReader.cpp; sourceTree = "<group>"; };
+		BF0BFC301C7384C600257274 /* BasePropertyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePropertyReader.h; sourceTree = "<group>"; };
+		BF0BFC311C7384C600257274 /* BasePropertyWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasePropertyWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC321C7384C600257274 /* BasePropertyWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePropertyWriter.h; sourceTree = "<group>"; };
+		BF0BFC331C7384C600257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFC341C7384C600257274 /* CompoundPropertyReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompoundPropertyReader.cpp; sourceTree = "<group>"; };
+		BF0BFC351C7384C600257274 /* CompoundPropertyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundPropertyReader.h; sourceTree = "<group>"; };
+		BF0BFC361C7384C600257274 /* CompoundPropertyWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompoundPropertyWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC371C7384C600257274 /* CompoundPropertyWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompoundPropertyWriter.h; sourceTree = "<group>"; };
+		BF0BFC381C7384C600257274 /* DataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataType.h; sourceTree = "<group>"; };
+		BF0BFC391C7384C600257274 /* ForwardDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardDeclarations.h; sourceTree = "<group>"; };
+		BF0BFC3A1C7384C600257274 /* Foundation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Foundation.cpp; sourceTree = "<group>"; };
+		BF0BFC3B1C7384C600257274 /* Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foundation.h; sourceTree = "<group>"; };
+		BF0BFC3C1C7384C600257274 /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaData.h; sourceTree = "<group>"; };
+		BF0BFC3D1C7384C600257274 /* ObjectHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectHeader.h; sourceTree = "<group>"; };
+		BF0BFC3E1C7384C600257274 /* ObjectReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectReader.cpp; sourceTree = "<group>"; };
+		BF0BFC3F1C7384C600257274 /* ObjectReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectReader.h; sourceTree = "<group>"; };
+		BF0BFC401C7384C600257274 /* ObjectWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC411C7384C600257274 /* ObjectWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectWriter.h; sourceTree = "<group>"; };
+		BF0BFC421C7384C600257274 /* PropertyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyHeader.h; sourceTree = "<group>"; };
+		BF0BFC431C7384C600257274 /* ReadArraySampleCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadArraySampleCache.cpp; sourceTree = "<group>"; };
+		BF0BFC441C7384C600257274 /* ReadArraySampleCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadArraySampleCache.h; sourceTree = "<group>"; };
+		BF0BFC451C7384C600257274 /* ScalarPropertyReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarPropertyReader.cpp; sourceTree = "<group>"; };
+		BF0BFC461C7384C600257274 /* ScalarPropertyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalarPropertyReader.h; sourceTree = "<group>"; };
+		BF0BFC471C7384C600257274 /* ScalarPropertyWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarPropertyWriter.cpp; sourceTree = "<group>"; };
+		BF0BFC481C7384C600257274 /* ScalarPropertyWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalarPropertyWriter.h; sourceTree = "<group>"; };
+		BF0BFC491C7384C600257274 /* ScalarSample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarSample.cpp; sourceTree = "<group>"; };
+		BF0BFC4A1C7384C600257274 /* ScalarSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalarSample.h; sourceTree = "<group>"; };
+		BF0BFC4C1C7384C600257274 /* Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assert.h; sourceTree = "<group>"; };
+		BF0BFC4D1C7384C600257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFC4E1C7384C600257274 /* CompoundPropertyTest1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompoundPropertyTest1.cpp; sourceTree = "<group>"; };
+		BF0BFC4F1C7384C600257274 /* OctessenceBug38.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OctessenceBug38.cpp; sourceTree = "<group>"; };
+		BF0BFC501C7384C600257274 /* OctessenceBug58.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OctessenceBug58.cpp; sourceTree = "<group>"; };
+		BF0BFC511C7384C600257274 /* TestTimeSampling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestTimeSampling.cpp; sourceTree = "<group>"; };
+		BF0BFC521C7384C600257274 /* TimeSampling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSampling.cpp; sourceTree = "<group>"; };
+		BF0BFC531C7384C600257274 /* TimeSampling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSampling.h; sourceTree = "<group>"; };
+		BF0BFC541C7384C600257274 /* TimeSamplingType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSamplingType.cpp; sourceTree = "<group>"; };
+		BF0BFC551C7384C600257274 /* TimeSamplingType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSamplingType.h; sourceTree = "<group>"; };
+		BF0BFC6F1C73877100257274 /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
+		BF0BFC701C73877100257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFC711C73877100257274 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		BF0BFC721C73877100257274 /* Config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Config.h.in; sourceTree = "<group>"; };
+		BF0BFC731C73877100257274 /* Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Digest.h; sourceTree = "<group>"; };
+		BF0BFC741C73877100257274 /* Dimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimensions.h; sourceTree = "<group>"; };
+		BF0BFC751C73877100257274 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		BF0BFC761C73877100257274 /* Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
+		BF0BFC771C73877100257274 /* Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foundation.h; sourceTree = "<group>"; };
+		BF0BFC781C73877100257274 /* Murmur3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Murmur3.cpp; sourceTree = "<group>"; };
+		BF0BFC791C73877100257274 /* Murmur3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Murmur3.h; sourceTree = "<group>"; };
+		BF0BFC7A1C73877100257274 /* Naming.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Naming.cpp; sourceTree = "<group>"; };
+		BF0BFC7B1C73877100257274 /* Naming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Naming.h; sourceTree = "<group>"; };
+		BF0BFC7C1C73877100257274 /* OperatorBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorBool.h; sourceTree = "<group>"; };
+		BF0BFC7D1C73877100257274 /* PlainOldDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainOldDataType.h; sourceTree = "<group>"; };
+		BF0BFC7E1C73877100257274 /* SpookyV2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpookyV2.cpp; sourceTree = "<group>"; };
+		BF0BFC7F1C73877100257274 /* SpookyV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpookyV2.h; sourceTree = "<group>"; };
+		BF0BFC811C73877100257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF0BFC821C73877100257274 /* DimensionsTestJeffs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DimensionsTestJeffs.cpp; sourceTree = "<group>"; };
+		BF0BFC831C73877100257274 /* NamingTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NamingTest.cpp; sourceTree = "<group>"; };
+		BF0BFC841C73877100257274 /* OperatorBoolTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OperatorBoolTest.cpp; sourceTree = "<group>"; };
+		BF0BFC851C73877100257274 /* TokenMapTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenMapTest.cpp; sourceTree = "<group>"; };
+		BF0BFC861C73877100257274 /* TokenMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenMap.cpp; sourceTree = "<group>"; };
+		BF0BFC871C73877100257274 /* TokenMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenMap.h; sourceTree = "<group>"; };
+		BF0BFC931C73884100257274 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = OPENEXR_PATH; };
+		BF0BFC951C73886100257274 /* libHalf.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libHalf.dylib; path = lib/libHalf.dylib; sourceTree = ILMBASE_PATH; };
+		BF0BFC961C73886100257274 /* libIex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIex.dylib; path = lib/libIex.dylib; sourceTree = ILMBASE_PATH; };
+		BF0BFC971C73886100257274 /* libIexMath.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIexMath.dylib; path = lib/libIexMath.dylib; sourceTree = ILMBASE_PATH; };
+		BF0BFC981C73886100257274 /* libIlmThread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIlmThread.dylib; path = lib/libIlmThread.dylib; sourceTree = ILMBASE_PATH; };
+		BF0BFC991C73886100257274 /* libImath.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libImath.dylib; path = lib/libImath.dylib; sourceTree = ILMBASE_PATH; };
 		BF1191171BDAF98000DD627C /* SoyMedia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoyMedia.cpp; path = src/SoyMedia.cpp; sourceTree = "<group>"; };
 		BF1191181BDAF98000DD627C /* SoyMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyMedia.h; path = src/SoyMedia.h; sourceTree = "<group>"; };
 		BF1499A81B4D640D00DA2575 /* BundleInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BundleInfo.plist; sourceTree = "<group>"; };
@@ -288,9 +481,15 @@
 				BFCE6BD51C6E2A4E00E01F35 /* VideoToolbox.framework in Frameworks */,
 				BFCE6BD31C6E2A2700E01F35 /* ApplicationServices.framework in Frameworks */,
 				BFCE6BC91C6E2A0300E01F35 /* CoreMedia.framework in Frameworks */,
+				BF0BFC9D1C73886100257274 /* libIlmThread.dylib in Frameworks */,
+				BF0BFC9B1C73886100257274 /* libIex.dylib in Frameworks */,
 				BFCE6BC61C6E296800E01F35 /* QuartzCore.framework in Frameworks */,
 				BFCE6BC71C6E2A0300E01F35 /* OpenGL.framework in Frameworks */,
+				BF0BFC9C1C73886100257274 /* libIexMath.dylib in Frameworks */,
 				BFCE6BC41C6E288600E01F35 /* CoreGraphics.framework in Frameworks */,
+				BF0BFC941C73884100257274 /* lib in Frameworks */,
+				BF0BFC9E1C73886100257274 /* libImath.dylib in Frameworks */,
+				BF0BFC9A1C73886100257274 /* libHalf.dylib in Frameworks */,
 				BFCE6BC21C6E285200E01F35 /* AppKit.framework in Frameworks */,
 				BFCE6BCA1C6E2A0300E01F35 /* AVFoundation.framework in Frameworks */,
 				BFCE6BC81C6E2A0300E01F35 /* CoreVideo.framework in Frameworks */,
@@ -310,6 +509,12 @@
 		BF06DEF81B2ACD3B006F241F = {
 			isa = PBXGroup;
 			children = (
+				BF0BFC931C73884100257274 /* lib */,
+				BF0BFC951C73886100257274 /* libHalf.dylib */,
+				BF0BFC961C73886100257274 /* libIex.dylib */,
+				BF0BFC971C73886100257274 /* libIexMath.dylib */,
+				BF0BFC981C73886100257274 /* libIlmThread.dylib */,
+				BF0BFC991C73886100257274 /* libImath.dylib */,
 				BFCE6BD41C6E2A4E00E01F35 /* VideoToolbox.framework */,
 				BFCE6BD21C6E2A2700E01F35 /* ApplicationServices.framework */,
 				BFCE6BC51C6E296800E01F35 /* QuartzCore.framework */,
@@ -325,6 +530,190 @@
 				BFEEDD6F1B46A7E5002F9CFA /* src */,
 				BFEEDD6E1B46A7E5002F9CFA /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BF0BFBB21C73819E00257274 /* Abc */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFBB31C73819E00257274 /* All.h */,
+				BF0BFBB41C73819E00257274 /* ArchiveInfo.cpp */,
+				BF0BFBB51C73819E00257274 /* ArchiveInfo.h */,
+				BF0BFBB61C73819E00257274 /* Argument.h */,
+				BF0BFBB71C73819E00257274 /* Base.h */,
+				BF0BFBB81C73819E00257274 /* CMakeLists.txt */,
+				BF0BFBB91C73819E00257274 /* ErrorHandler.cpp */,
+				BF0BFBBA1C73819E00257274 /* ErrorHandler.h */,
+				BF0BFBBB1C73819E00257274 /* Foundation.h */,
+				BF0BFBBC1C73819E00257274 /* IArchive.cpp */,
+				BF0BFBBD1C73819E00257274 /* IArchive.h */,
+				BF0BFBBE1C73819E00257274 /* IArrayProperty.cpp */,
+				BF0BFBBF1C73819E00257274 /* IArrayProperty.h */,
+				BF0BFBC01C73819E00257274 /* IBaseProperty.h */,
+				BF0BFBC11C73819E00257274 /* ICompoundProperty.cpp */,
+				BF0BFBC21C73819E00257274 /* ICompoundProperty.h */,
+				BF0BFBC31C73819E00257274 /* IObject.cpp */,
+				BF0BFBC41C73819E00257274 /* IObject.h */,
+				BF0BFBC51C73819E00257274 /* ISampleSelector.cpp */,
+				BF0BFBC61C73819E00257274 /* ISampleSelector.h */,
+				BF0BFBC71C73819E00257274 /* IScalarProperty.cpp */,
+				BF0BFBC81C73819E00257274 /* IScalarProperty.h */,
+				BF0BFBC91C73819E00257274 /* ISchema.h */,
+				BF0BFBCA1C73819E00257274 /* ISchemaObject.h */,
+				BF0BFBCB1C73819E00257274 /* ITypedArrayProperty.h */,
+				BF0BFBCC1C73819E00257274 /* ITypedScalarProperty.h */,
+				BF0BFBCD1C73819E00257274 /* OArchive.cpp */,
+				BF0BFBCE1C73819E00257274 /* OArchive.h */,
+				BF0BFBCF1C73819E00257274 /* OArrayProperty.cpp */,
+				BF0BFBD01C73819E00257274 /* OArrayProperty.h */,
+				BF0BFBD11C73819E00257274 /* OBaseProperty.h */,
+				BF0BFBD21C73819E00257274 /* OCompoundProperty.cpp */,
+				BF0BFBD31C73819E00257274 /* OCompoundProperty.h */,
+				BF0BFBD41C73819E00257274 /* OObject.cpp */,
+				BF0BFBD51C73819E00257274 /* OObject.h */,
+				BF0BFBD61C73819E00257274 /* OScalarProperty.cpp */,
+				BF0BFBD71C73819E00257274 /* OScalarProperty.h */,
+				BF0BFBD81C73819E00257274 /* OSchema.h */,
+				BF0BFBD91C73819E00257274 /* OSchemaObject.h */,
+				BF0BFBDA1C73819E00257274 /* OTypedArrayProperty.h */,
+				BF0BFBDB1C73819E00257274 /* OTypedScalarProperty.h */,
+				BF0BFBDC1C73819E00257274 /* Reference.cpp */,
+				BF0BFBDD1C73819E00257274 /* Reference.h */,
+				BF0BFBDE1C73819E00257274 /* SourceName.cpp */,
+				BF0BFBDF1C73819E00257274 /* SourceName.h */,
+				BF0BFBE01C73819E00257274 /* Tests */,
+				BF0BFBF31C73819E00257274 /* TypedArraySample.h */,
+				BF0BFBF41C73819E00257274 /* TypedPropertyTraits.h */,
+			);
+			path = Abc;
+			sourceTree = "<group>";
+		};
+		BF0BFBE01C73819E00257274 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFBE11C73819E00257274 /* ArchiveTest.cpp */,
+				BF0BFBE21C73819E00257274 /* ArrayPropertyTest.cpp */,
+				BF0BFBE31C73819E00257274 /* CacheControlTest.cpp */,
+				BF0BFBE41C73819E00257274 /* CMakeLists.txt */,
+				BF0BFBE51C73819E00257274 /* CompileTest.cpp */,
+				BF0BFBE61C73819E00257274 /* CyclicPropertyTest.cpp */,
+				BF0BFBE71C73819E00257274 /* IdentityPropertyTest.cpp */,
+				BF0BFBE81C73819E00257274 /* InstanceTest.cpp */,
+				BF0BFBE91C73819E00257274 /* ObjectsAndPropertiesTest.cpp */,
+				BF0BFBEA1C73819E00257274 /* ObjectTests.cpp */,
+				BF0BFBEB1C73819E00257274 /* OctessenceBug16.cpp */,
+				BF0BFBEC1C73819E00257274 /* OctessenceBug17.cpp */,
+				BF0BFBED1C73819E00257274 /* ParentingTest.cpp */,
+				BF0BFBEE1C73819E00257274 /* PropertyTests.cpp */,
+				BF0BFBEF1C73819E00257274 /* RedundantDataTest.cpp */,
+				BF0BFBF01C73819E00257274 /* test1.cpp */,
+				BF0BFBF11C73819E00257274 /* TypedArraySampleTest.cpp */,
+				BF0BFBF21C73819E00257274 /* UniformPropertyTest.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BF0BFC221C7384C600257274 /* AbcCoreAbstract */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFC231C7384C600257274 /* All.h */,
+				BF0BFC241C7384C600257274 /* ArchiveReader.cpp */,
+				BF0BFC251C7384C600257274 /* ArchiveReader.h */,
+				BF0BFC261C7384C600257274 /* ArchiveWriter.cpp */,
+				BF0BFC271C7384C600257274 /* ArchiveWriter.h */,
+				BF0BFC281C7384C600257274 /* ArrayPropertyReader.cpp */,
+				BF0BFC291C7384C600257274 /* ArrayPropertyReader.h */,
+				BF0BFC2A1C7384C600257274 /* ArrayPropertyWriter.cpp */,
+				BF0BFC2B1C7384C600257274 /* ArrayPropertyWriter.h */,
+				BF0BFC2C1C7384C600257274 /* ArraySample.cpp */,
+				BF0BFC2D1C7384C600257274 /* ArraySample.h */,
+				BF0BFC2E1C7384C600257274 /* ArraySampleKey.h */,
+				BF0BFC2F1C7384C600257274 /* BasePropertyReader.cpp */,
+				BF0BFC301C7384C600257274 /* BasePropertyReader.h */,
+				BF0BFC311C7384C600257274 /* BasePropertyWriter.cpp */,
+				BF0BFC321C7384C600257274 /* BasePropertyWriter.h */,
+				BF0BFC331C7384C600257274 /* CMakeLists.txt */,
+				BF0BFC341C7384C600257274 /* CompoundPropertyReader.cpp */,
+				BF0BFC351C7384C600257274 /* CompoundPropertyReader.h */,
+				BF0BFC361C7384C600257274 /* CompoundPropertyWriter.cpp */,
+				BF0BFC371C7384C600257274 /* CompoundPropertyWriter.h */,
+				BF0BFC381C7384C600257274 /* DataType.h */,
+				BF0BFC391C7384C600257274 /* ForwardDeclarations.h */,
+				BF0BFC3A1C7384C600257274 /* Foundation.cpp */,
+				BF0BFC3B1C7384C600257274 /* Foundation.h */,
+				BF0BFC3C1C7384C600257274 /* MetaData.h */,
+				BF0BFC3D1C7384C600257274 /* ObjectHeader.h */,
+				BF0BFC3E1C7384C600257274 /* ObjectReader.cpp */,
+				BF0BFC3F1C7384C600257274 /* ObjectReader.h */,
+				BF0BFC401C7384C600257274 /* ObjectWriter.cpp */,
+				BF0BFC411C7384C600257274 /* ObjectWriter.h */,
+				BF0BFC421C7384C600257274 /* PropertyHeader.h */,
+				BF0BFC431C7384C600257274 /* ReadArraySampleCache.cpp */,
+				BF0BFC441C7384C600257274 /* ReadArraySampleCache.h */,
+				BF0BFC451C7384C600257274 /* ScalarPropertyReader.cpp */,
+				BF0BFC461C7384C600257274 /* ScalarPropertyReader.h */,
+				BF0BFC471C7384C600257274 /* ScalarPropertyWriter.cpp */,
+				BF0BFC481C7384C600257274 /* ScalarPropertyWriter.h */,
+				BF0BFC491C7384C600257274 /* ScalarSample.cpp */,
+				BF0BFC4A1C7384C600257274 /* ScalarSample.h */,
+				BF0BFC4B1C7384C600257274 /* Tests */,
+				BF0BFC521C7384C600257274 /* TimeSampling.cpp */,
+				BF0BFC531C7384C600257274 /* TimeSampling.h */,
+				BF0BFC541C7384C600257274 /* TimeSamplingType.cpp */,
+				BF0BFC551C7384C600257274 /* TimeSamplingType.h */,
+			);
+			path = AbcCoreAbstract;
+			sourceTree = "<group>";
+		};
+		BF0BFC4B1C7384C600257274 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFC4C1C7384C600257274 /* Assert.h */,
+				BF0BFC4D1C7384C600257274 /* CMakeLists.txt */,
+				BF0BFC4E1C7384C600257274 /* CompoundPropertyTest1.cpp */,
+				BF0BFC4F1C7384C600257274 /* OctessenceBug38.cpp */,
+				BF0BFC501C7384C600257274 /* OctessenceBug58.cpp */,
+				BF0BFC511C7384C600257274 /* TestTimeSampling.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BF0BFC6E1C73877100257274 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFC6F1C73877100257274 /* All.h */,
+				BF0BFC701C73877100257274 /* CMakeLists.txt */,
+				BF0BFC711C73877100257274 /* Config.h */,
+				BF0BFC721C73877100257274 /* Config.h.in */,
+				BF0BFC731C73877100257274 /* Digest.h */,
+				BF0BFC741C73877100257274 /* Dimensions.h */,
+				BF0BFC751C73877100257274 /* Exception.h */,
+				BF0BFC761C73877100257274 /* Export.h */,
+				BF0BFC771C73877100257274 /* Foundation.h */,
+				BF0BFC781C73877100257274 /* Murmur3.cpp */,
+				BF0BFC791C73877100257274 /* Murmur3.h */,
+				BF0BFC7A1C73877100257274 /* Naming.cpp */,
+				BF0BFC7B1C73877100257274 /* Naming.h */,
+				BF0BFC7C1C73877100257274 /* OperatorBool.h */,
+				BF0BFC7D1C73877100257274 /* PlainOldDataType.h */,
+				BF0BFC7E1C73877100257274 /* SpookyV2.cpp */,
+				BF0BFC7F1C73877100257274 /* SpookyV2.h */,
+				BF0BFC801C73877100257274 /* Tests */,
+				BF0BFC861C73877100257274 /* TokenMap.cpp */,
+				BF0BFC871C73877100257274 /* TokenMap.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BF0BFC801C73877100257274 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFC811C73877100257274 /* CMakeLists.txt */,
+				BF0BFC821C73877100257274 /* DimensionsTestJeffs.cpp */,
+				BF0BFC831C73877100257274 /* NamingTest.cpp */,
+				BF0BFC841C73877100257274 /* OperatorBoolTest.cpp */,
+				BF0BFC851C73877100257274 /* TokenMapTest.cpp */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BF8F3EA21B4BCC9B00D35543 /* Android */ = {
@@ -436,6 +825,17 @@
 			name = BuildScripts;
 			sourceTree = SOURCE_ROOT;
 		};
+		BFEBD6611C737FE700539560 /* Alembic */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BFC6E1C73877100257274 /* Util */,
+				BF0BFC221C7384C600257274 /* AbcCoreAbstract */,
+				BF0BFBB21C73819E00257274 /* Abc */,
+			);
+			name = Alembic;
+			path = lib/Alembic;
+			sourceTree = ALEMBIC_PATH;
+		};
 		BFEEDD6E1B46A7E5002F9CFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +849,7 @@
 		BFEEDD6F1B46A7E5002F9CFA /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BFEBD6611C737FE700539560 /* Alembic */,
 				BF1499A81B4D640D00DA2575 /* BundleInfo.plist */,
 				BF4090E91B5EDA7100643329 /* FrameworkInfo.plist */,
 				BF1499AD1B4D640D00DA2575 /* PopAbc.cpp */,
@@ -618,6 +1019,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0BFC881C73877100257274 /* CMakeLists.txt in Resources */,
+				BF0BFC891C73877100257274 /* Config.h.in in Resources */,
+				BF0BFC5D1C7384C600257274 /* CMakeLists.txt in Resources */,
+				BF0BFBF61C73819E00257274 /* CMakeLists.txt in Resources */,
+				BF0BFC671C7384C600257274 /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,41 +1107,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0BFC8A1C73877100257274 /* Murmur3.cpp in Sources */,
 				BF41F9E11B4BDC1E0015614A /* memheap.cpp in Sources */,
 				BF7225B11BAF0E2700550AD8 /* SoyMemFile.cpp in Sources */,
+				BF0BFC031C73819E00257274 /* Reference.cpp in Sources */,
 				BF3EB6C21C15ACFB002686F6 /* SoyAvf.mm in Sources */,
 				BF7225B71BAF38D300550AD8 /* SoyRef.cpp in Sources */,
+				BF0BFBFE1C73819E00257274 /* OArchive.cpp in Sources */,
 				BF41F9C81B4BDB270015614A /* SoyAssert.cpp in Sources */,
+				BF0BFC611C7384C600257274 /* ObjectReader.cpp in Sources */,
+				BF0BFC571C7384C600257274 /* ArchiveWriter.cpp in Sources */,
 				BF406D221BB9B1A900CECF4E /* SoySocket.cpp in Sources */,
 				BF5B071A1B5D06AF00C489C6 /* SoyShader.cpp in Sources */,
+				BF0BFBFF1C73819E00257274 /* OArrayProperty.cpp in Sources */,
 				BF406D3F1BB9C8B200CECF4E /* SoyMulticast.mm in Sources */,
+				BF0BFC601C7384C600257274 /* Foundation.cpp in Sources */,
+				BF0BFBFC1C73819E00257274 /* ISampleSelector.cpp in Sources */,
 				BF41F9CA1B4BDB270015614A /* SoyTime.cpp in Sources */,
 				BF406D321BB9B1C500CECF4E /* SoyProtocol.cpp in Sources */,
+				BF0BFC661C7384C600257274 /* ScalarSample.cpp in Sources */,
+				BF0BFC561C7384C600257274 /* ArchiveReader.cpp in Sources */,
+				BF0BFC5E1C7384C600257274 /* CompoundPropertyReader.cpp in Sources */,
+				BF0BFBF51C73819E00257274 /* ArchiveInfo.cpp in Sources */,
 				BF1499D31B4D660F00DA2575 /* SoyOpengl.cpp in Sources */,
+				BF0BFC621C7384C600257274 /* ObjectWriter.cpp in Sources */,
+				BF0BFC001C73819E00257274 /* OCompoundProperty.cpp in Sources */,
+				BF0BFBFD1C73819E00257274 /* IScalarProperty.cpp in Sources */,
 				BF41F9AA1B4BD1920015614A /* SoyTypes.cpp in Sources */,
+				BF0BFC921C73877100257274 /* TokenMap.cpp in Sources */,
+				BF0BFBFB1C73819E00257274 /* IObject.cpp in Sources */,
+				BF0BFC6D1C7384C600257274 /* TimeSamplingType.cpp in Sources */,
+				BF0BFC8B1C73877100257274 /* Naming.cpp in Sources */,
+				BF0BFC5A1C7384C600257274 /* ArraySample.cpp in Sources */,
 				BF4B116C1C667FFE001D9EAE /* SoyMath.cpp in Sources */,
 				BF2E8B131B55270D00CBD1AC /* SoyString.mm in Sources */,
+				BF0BFC6C1C7384C600257274 /* TimeSampling.cpp in Sources */,
 				BF3EB6B31C15ACE4002686F6 /* SoyUnity.cpp in Sources */,
+				BF0BFC011C73819E00257274 /* OObject.cpp in Sources */,
 				BF41F9E51B4BDC2F0015614A /* SoyThread.cpp in Sources */,
 				BF1499C31B4D640D00DA2575 /* PopUnity.cpp in Sources */,
 				BF11911A1BDAF98000DD627C /* SoyMedia.cpp in Sources */,
 				BF627D961C622EF900BB840B /* SoyFilesystem.cpp in Sources */,
 				BFBC3DA11BC8081D00CEE3D5 /* SoyTime.mm in Sources */,
+				BF0BFC631C7384C600257274 /* ReadArraySampleCache.cpp in Sources */,
 				BF1499DF1B4D67CB00DA2575 /* SoyPng.cpp in Sources */,
 				BF41F9CE1B4BDBA30015614A /* SoyString.cpp in Sources */,
+				BF0BFC5F1C7384C600257274 /* CompoundPropertyWriter.cpp in Sources */,
+				BF0BFC581C7384C600257274 /* ArrayPropertyReader.cpp in Sources */,
 				BF8990AE1BE019FC00FF81FB /* SoySocketStream.cpp in Sources */,
+				BF0BFBF81C73819E00257274 /* IArchive.cpp in Sources */,
 				BFB256001BA1EA5A00F30239 /* SoyRuntimeLibrary.cpp in Sources */,
 				BF1499DB1B4D67AF00DA2575 /* SoyPixels.cpp in Sources */,
+				BF0BFBFA1C73819E00257274 /* ICompoundProperty.cpp in Sources */,
 				BF1499C11B4D640D00DA2575 /* PopAbc.cpp in Sources */,
 				BF192B081BF10A9D00324911 /* SoyHttpConnection.cpp in Sources */,
 				BF41F9D91B4BDBC60015614A /* SoyDebug.mm in Sources */,
+				BF0BFC651C7384C600257274 /* ScalarPropertyWriter.cpp in Sources */,
+				BF0BFC021C73819E00257274 /* OScalarProperty.cpp in Sources */,
+				BF0BFC5C1C7384C600257274 /* BasePropertyWriter.cpp in Sources */,
 				BF406D261BB9B1A900CECF4E /* SoyStream.cpp in Sources */,
 				BF41F9DD1B4BDBD80015614A /* SoyEvent.cpp in Sources */,
 				BF1499CF1B4D646B00DA2575 /* SoyVector.cpp in Sources */,
 				BF406D2E1BB9B1C500CECF4E /* SoyHttp.cpp in Sources */,
 				BF192B011BF10A9400324911 /* SoyH264.cpp in Sources */,
 				BF1499D71B4D663800DA2575 /* SoyOpenglContext.cpp in Sources */,
+				BF0BFC5B1C7384C600257274 /* BasePropertyReader.cpp in Sources */,
+				BF0BFC591C7384C600257274 /* ArrayPropertyWriter.cpp in Sources */,
+				BF0BFBF91C73819E00257274 /* IArrayProperty.cpp in Sources */,
 				BF41F9D21B4BDBA80015614A /* SoyArray.cpp in Sources */,
+				BF0BFBF71C73819E00257274 /* ErrorHandler.cpp in Sources */,
+				BF0BFC041C73819E00257274 /* SourceName.cpp in Sources */,
+				BF0BFC8C1C73877100257274 /* SpookyV2.cpp in Sources */,
+				BF0BFC641C7384C600257274 /* ScalarPropertyReader.cpp in Sources */,
 				BF627D9A1C622EF900BB840B /* SoyFilesystem.mm in Sources */,
 				BF41F9D71B4BDBC60015614A /* SoyDebug.cpp in Sources */,
 			);
@@ -885,6 +1328,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(OPENCAST_PATH)/**",
+					"$(ALEMBIC_PATH)/lib",
+					"$(OPENEXR_PATH)/include/OpenEXR",
+					/usr/local/Cellar/ilmbase/2.1.0/include/OpenEXR,
 				);
 				INFOPLIST_FILE = src/BundleInfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @rpath/Frameworks @rpath/Resources Frameworks/";
@@ -892,6 +1338,8 @@
 					"$(inherited)",
 					"$(CUDA_PATH)/lib",
 					"$(OPENCAST_PATH)/build/Debug/",
+					/usr/local/Cellar/openexr/2.1.0/lib,
+					/usr/local/Cellar/ilmbase/2.1.0/lib,
 				);
 				PRODUCT_NAME = PopAbcIos;
 				SDKROOT = macosx10.10;

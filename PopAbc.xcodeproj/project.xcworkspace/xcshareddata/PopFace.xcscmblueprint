@@ -1,0 +1,58 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4619FD5C42AA4C9E0753E8F7C18437CEA59C3227",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4619FD5C42AA4C9E0753E8F7C18437CEA59C3227" : 0,
+    "8CEE2920F82777E0800DD1AD4CACD1E31E585E07" : 0,
+    "3EA6B5380D894491ED38119B2315A466F1D92D0C" : 0,
+    "87907EAD08F9AC05484849759EAC4E8AE0659685" : 0,
+    "3C57439D3CFC4E285A6CCFF070435C9C507D0F0A" : 0,
+    "4F816218E3F87D80AAEC8A1C67ABC6C147C0E9EC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C7B6C62A-E7FF-4139-8425-927FE60CD3AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4619FD5C42AA4C9E0753E8F7C18437CEA59C3227" : "PopFace\/",
+    "8CEE2920F82777E0800DD1AD4CACD1E31E585E07" : "libav\/",
+    "3EA6B5380D894491ED38119B2315A466F1D92D0C" : "PopCast\/",
+    "87907EAD08F9AC05484849759EAC4E8AE0659685" : "SoyLib\/",
+    "3C57439D3CFC4E285A6CCFF070435C9C507D0F0A" : "OpenCast\/",
+    "4F816218E3F87D80AAEC8A1C67ABC6C147C0E9EC" : "Bento4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PopFace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PopFace.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SoylentGraham\/OpenCast.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C57439D3CFC4E285A6CCFF070435C9C507D0F0A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NewChromantics\/PopCast.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3EA6B5380D894491ED38119B2315A466F1D92D0C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NewChromantics\/PopFace.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4619FD5C42AA4C9E0753E8F7C18437CEA59C3227"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/axiomatic-systems\/Bento4.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F816218E3F87D80AAEC8A1C67ABC6C147C0E9EC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SoylentGraham\/SoyLib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "87907EAD08F9AC05484849759EAC4E8AE0659685"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/libav\/libav.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CEE2920F82777E0800DD1AD4CACD1E31E585E07"
+    }
+  ]
+}

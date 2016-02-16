@@ -91,6 +91,128 @@
 		BF3EB6C11C15ACFB002686F6 /* SoyAvf.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3EB6BF1C15ACFB002686F6 /* SoyAvf.mm */; };
 		BF3EB6C21C15ACFB002686F6 /* SoyAvf.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3EB6BF1C15ACFB002686F6 /* SoyAvf.mm */; };
 		BF3EB6C31C15ACFB002686F6 /* SoyAvf.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF3EB6BF1C15ACFB002686F6 /* SoyAvf.mm */; };
+		BF3F4B4D1C738BB800BBCF4E /* SoyAlembic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B4B1C738BB800BBCF4E /* SoyAlembic.cpp */; };
+		BF3F4B501C738CCA00BBCF4E /* TParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B4E1C738CC800BBCF4E /* TParser.cpp */; };
+		BF3F4B511C738CCA00BBCF4E /* TParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B4E1C738CC800BBCF4E /* TParser.cpp */; };
+		BF3F4B521C738CCB00BBCF4E /* TParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B4E1C738CC800BBCF4E /* TParser.cpp */; };
+		BF3F4B9A1C738F8600BBCF4E /* All.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B541C738F8600BBCF4E /* All.h */; };
+		BF3F4B9B1C738F8600BBCF4E /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF3F4B551C738F8600BBCF4E /* CMakeLists.txt */; };
+		BF3F4B9C1C738F8600BBCF4E /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF3F4B551C738F8600BBCF4E /* CMakeLists.txt */; };
+		BF3F4B9D1C738F8600BBCF4E /* IFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B561C738F8600BBCF4E /* IFactory.cpp */; };
+		BF3F4B9E1C738F8600BBCF4E /* IFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B561C738F8600BBCF4E /* IFactory.cpp */; };
+		BF3F4B9F1C738F8600BBCF4E /* IFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B561C738F8600BBCF4E /* IFactory.cpp */; };
+		BF3F4BA01C738F8600BBCF4E /* IFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B571C738F8600BBCF4E /* IFactory.h */; };
+		BF3F4BA11C738F8600BBCF4E /* All.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B591C738F8600BBCF4E /* All.h */; };
+		BF3F4BA21C738F8600BBCF4E /* AprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5A1C738F8600BBCF4E /* AprImpl.cpp */; };
+		BF3F4BA31C738F8600BBCF4E /* AprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5A1C738F8600BBCF4E /* AprImpl.cpp */; };
+		BF3F4BA41C738F8600BBCF4E /* AprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5A1C738F8600BBCF4E /* AprImpl.cpp */; };
+		BF3F4BA51C738F8600BBCF4E /* AprImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B5B1C738F8600BBCF4E /* AprImpl.h */; };
+		BF3F4BA61C738F8600BBCF4E /* ApwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5C1C738F8600BBCF4E /* ApwImpl.cpp */; };
+		BF3F4BA71C738F8600BBCF4E /* ApwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5C1C738F8600BBCF4E /* ApwImpl.cpp */; };
+		BF3F4BA81C738F8600BBCF4E /* ApwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5C1C738F8600BBCF4E /* ApwImpl.cpp */; };
+		BF3F4BA91C738F8600BBCF4E /* ApwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B5D1C738F8600BBCF4E /* ApwImpl.h */; };
+		BF3F4BAA1C738F8600BBCF4E /* ArImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5E1C738F8600BBCF4E /* ArImpl.cpp */; };
+		BF3F4BAB1C738F8600BBCF4E /* ArImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5E1C738F8600BBCF4E /* ArImpl.cpp */; };
+		BF3F4BAC1C738F8600BBCF4E /* ArImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B5E1C738F8600BBCF4E /* ArImpl.cpp */; };
+		BF3F4BAD1C738F8600BBCF4E /* ArImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B5F1C738F8600BBCF4E /* ArImpl.h */; };
+		BF3F4BAE1C738F8600BBCF4E /* AwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B601C738F8600BBCF4E /* AwImpl.cpp */; };
+		BF3F4BAF1C738F8600BBCF4E /* AwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B601C738F8600BBCF4E /* AwImpl.cpp */; };
+		BF3F4BB01C738F8600BBCF4E /* AwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B601C738F8600BBCF4E /* AwImpl.cpp */; };
+		BF3F4BB11C738F8600BBCF4E /* AwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B611C738F8600BBCF4E /* AwImpl.h */; };
+		BF3F4BB21C738F8600BBCF4E /* CacheImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B621C738F8600BBCF4E /* CacheImpl.cpp */; };
+		BF3F4BB31C738F8600BBCF4E /* CacheImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B621C738F8600BBCF4E /* CacheImpl.cpp */; };
+		BF3F4BB41C738F8600BBCF4E /* CacheImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B621C738F8600BBCF4E /* CacheImpl.cpp */; };
+		BF3F4BB51C738F8600BBCF4E /* CacheImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B631C738F8600BBCF4E /* CacheImpl.h */; };
+		BF3F4BB61C738F8600BBCF4E /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF3F4B641C738F8600BBCF4E /* CMakeLists.txt */; };
+		BF3F4BB71C738F8600BBCF4E /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF3F4B641C738F8600BBCF4E /* CMakeLists.txt */; };
+		BF3F4BB81C738F8600BBCF4E /* CprData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B651C738F8600BBCF4E /* CprData.cpp */; };
+		BF3F4BB91C738F8600BBCF4E /* CprData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B651C738F8600BBCF4E /* CprData.cpp */; };
+		BF3F4BBA1C738F8600BBCF4E /* CprData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B651C738F8600BBCF4E /* CprData.cpp */; };
+		BF3F4BBB1C738F8600BBCF4E /* CprData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B661C738F8600BBCF4E /* CprData.h */; };
+		BF3F4BBC1C738F8600BBCF4E /* CprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B671C738F8600BBCF4E /* CprImpl.cpp */; };
+		BF3F4BBD1C738F8600BBCF4E /* CprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B671C738F8600BBCF4E /* CprImpl.cpp */; };
+		BF3F4BBE1C738F8600BBCF4E /* CprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B671C738F8600BBCF4E /* CprImpl.cpp */; };
+		BF3F4BBF1C738F8600BBCF4E /* CprImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B681C738F8600BBCF4E /* CprImpl.h */; };
+		BF3F4BC01C738F8600BBCF4E /* CpwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B691C738F8600BBCF4E /* CpwData.cpp */; };
+		BF3F4BC11C738F8600BBCF4E /* CpwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B691C738F8600BBCF4E /* CpwData.cpp */; };
+		BF3F4BC21C738F8600BBCF4E /* CpwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B691C738F8600BBCF4E /* CpwData.cpp */; };
+		BF3F4BC31C738F8600BBCF4E /* CpwData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B6A1C738F8600BBCF4E /* CpwData.h */; };
+		BF3F4BC41C738F8600BBCF4E /* CpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6B1C738F8600BBCF4E /* CpwImpl.cpp */; };
+		BF3F4BC51C738F8600BBCF4E /* CpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6B1C738F8600BBCF4E /* CpwImpl.cpp */; };
+		BF3F4BC61C738F8600BBCF4E /* CpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6B1C738F8600BBCF4E /* CpwImpl.cpp */; };
+		BF3F4BC71C738F8600BBCF4E /* CpwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B6C1C738F8600BBCF4E /* CpwImpl.h */; };
+		BF3F4BC81C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6D1C738F8600BBCF4E /* DataTypeRegistry.cpp */; };
+		BF3F4BC91C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6D1C738F8600BBCF4E /* DataTypeRegistry.cpp */; };
+		BF3F4BCA1C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B6D1C738F8600BBCF4E /* DataTypeRegistry.cpp */; };
+		BF3F4BCB1C738F8600BBCF4E /* DataTypeRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B6E1C738F8600BBCF4E /* DataTypeRegistry.h */; };
+		BF3F4BCC1C738F8600BBCF4E /* Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B6F1C738F8600BBCF4E /* Foundation.h */; };
+		BF3F4BCD1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B701C738F8600BBCF4E /* HDF5Hierarchy.cpp */; };
+		BF3F4BCE1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B701C738F8600BBCF4E /* HDF5Hierarchy.cpp */; };
+		BF3F4BCF1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B701C738F8600BBCF4E /* HDF5Hierarchy.cpp */; };
+		BF3F4BD01C738F8600BBCF4E /* HDF5Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B711C738F8600BBCF4E /* HDF5Hierarchy.h */; };
+		BF3F4BD11C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B721C738F8600BBCF4E /* HDF5HierarchyReader.cpp */; };
+		BF3F4BD21C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B721C738F8600BBCF4E /* HDF5HierarchyReader.cpp */; };
+		BF3F4BD31C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B721C738F8600BBCF4E /* HDF5HierarchyReader.cpp */; };
+		BF3F4BD41C738F8600BBCF4E /* HDF5HierarchyReader.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B731C738F8600BBCF4E /* HDF5HierarchyReader.h */; };
+		BF3F4BD51C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B741C738F8600BBCF4E /* HDF5HierarchyWriter.cpp */; };
+		BF3F4BD61C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B741C738F8600BBCF4E /* HDF5HierarchyWriter.cpp */; };
+		BF3F4BD71C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B741C738F8600BBCF4E /* HDF5HierarchyWriter.cpp */; };
+		BF3F4BD81C738F8600BBCF4E /* HDF5HierarchyWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B751C738F8600BBCF4E /* HDF5HierarchyWriter.h */; };
+		BF3F4BD91C738F8600BBCF4E /* HDF5Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B761C738F8600BBCF4E /* HDF5Util.cpp */; };
+		BF3F4BDA1C738F8600BBCF4E /* HDF5Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B761C738F8600BBCF4E /* HDF5Util.cpp */; };
+		BF3F4BDB1C738F8600BBCF4E /* HDF5Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B761C738F8600BBCF4E /* HDF5Util.cpp */; };
+		BF3F4BDC1C738F8600BBCF4E /* HDF5Util.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B771C738F8600BBCF4E /* HDF5Util.h */; };
+		BF3F4BDD1C738F8600BBCF4E /* OrData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B781C738F8600BBCF4E /* OrData.cpp */; };
+		BF3F4BDE1C738F8600BBCF4E /* OrData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B781C738F8600BBCF4E /* OrData.cpp */; };
+		BF3F4BDF1C738F8600BBCF4E /* OrData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B781C738F8600BBCF4E /* OrData.cpp */; };
+		BF3F4BE01C738F8600BBCF4E /* OrData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B791C738F8600BBCF4E /* OrData.h */; };
+		BF3F4BE11C738F8600BBCF4E /* OrImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7A1C738F8600BBCF4E /* OrImpl.cpp */; };
+		BF3F4BE21C738F8600BBCF4E /* OrImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7A1C738F8600BBCF4E /* OrImpl.cpp */; };
+		BF3F4BE31C738F8600BBCF4E /* OrImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7A1C738F8600BBCF4E /* OrImpl.cpp */; };
+		BF3F4BE41C738F8600BBCF4E /* OrImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B7B1C738F8600BBCF4E /* OrImpl.h */; };
+		BF3F4BE51C738F8600BBCF4E /* OwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7C1C738F8600BBCF4E /* OwData.cpp */; };
+		BF3F4BE61C738F8600BBCF4E /* OwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7C1C738F8600BBCF4E /* OwData.cpp */; };
+		BF3F4BE71C738F8600BBCF4E /* OwData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7C1C738F8600BBCF4E /* OwData.cpp */; };
+		BF3F4BE81C738F8600BBCF4E /* OwData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B7D1C738F8600BBCF4E /* OwData.h */; };
+		BF3F4BE91C738F8600BBCF4E /* OwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7E1C738F8600BBCF4E /* OwImpl.cpp */; };
+		BF3F4BEA1C738F8600BBCF4E /* OwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7E1C738F8600BBCF4E /* OwImpl.cpp */; };
+		BF3F4BEB1C738F8600BBCF4E /* OwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B7E1C738F8600BBCF4E /* OwImpl.cpp */; };
+		BF3F4BEC1C738F8600BBCF4E /* OwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B7F1C738F8600BBCF4E /* OwImpl.h */; };
+		BF3F4BED1C738F8600BBCF4E /* ReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B801C738F8600BBCF4E /* ReadUtil.cpp */; };
+		BF3F4BEE1C738F8600BBCF4E /* ReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B801C738F8600BBCF4E /* ReadUtil.cpp */; };
+		BF3F4BEF1C738F8600BBCF4E /* ReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B801C738F8600BBCF4E /* ReadUtil.cpp */; };
+		BF3F4BF01C738F8600BBCF4E /* ReadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B811C738F8600BBCF4E /* ReadUtil.h */; };
+		BF3F4BF11C738F8600BBCF4E /* ReadWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B821C738F8600BBCF4E /* ReadWrite.cpp */; };
+		BF3F4BF21C738F8600BBCF4E /* ReadWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B821C738F8600BBCF4E /* ReadWrite.cpp */; };
+		BF3F4BF31C738F8600BBCF4E /* ReadWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B821C738F8600BBCF4E /* ReadWrite.cpp */; };
+		BF3F4BF41C738F8600BBCF4E /* ReadWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B831C738F8600BBCF4E /* ReadWrite.h */; };
+		BF3F4BF51C738F8600BBCF4E /* SimplePrImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B841C738F8600BBCF4E /* SimplePrImpl.h */; };
+		BF3F4BF61C738F8600BBCF4E /* SimplePwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B851C738F8600BBCF4E /* SimplePwImpl.h */; };
+		BF3F4BF71C738F8600BBCF4E /* SprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B861C738F8600BBCF4E /* SprImpl.cpp */; };
+		BF3F4BF81C738F8600BBCF4E /* SprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B861C738F8600BBCF4E /* SprImpl.cpp */; };
+		BF3F4BF91C738F8600BBCF4E /* SprImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B861C738F8600BBCF4E /* SprImpl.cpp */; };
+		BF3F4BFA1C738F8600BBCF4E /* SprImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B871C738F8600BBCF4E /* SprImpl.h */; };
+		BF3F4BFB1C738F8600BBCF4E /* SpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B881C738F8600BBCF4E /* SpwImpl.cpp */; };
+		BF3F4BFC1C738F8600BBCF4E /* SpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B881C738F8600BBCF4E /* SpwImpl.cpp */; };
+		BF3F4BFD1C738F8600BBCF4E /* SpwImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B881C738F8600BBCF4E /* SpwImpl.cpp */; };
+		BF3F4BFE1C738F8600BBCF4E /* SpwImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B891C738F8600BBCF4E /* SpwImpl.h */; };
+		BF3F4BFF1C738F8600BBCF4E /* StringReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8A1C738F8600BBCF4E /* StringReadUtil.cpp */; };
+		BF3F4C001C738F8600BBCF4E /* StringReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8A1C738F8600BBCF4E /* StringReadUtil.cpp */; };
+		BF3F4C011C738F8600BBCF4E /* StringReadUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8A1C738F8600BBCF4E /* StringReadUtil.cpp */; };
+		BF3F4C021C738F8600BBCF4E /* StringReadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B8B1C738F8600BBCF4E /* StringReadUtil.h */; };
+		BF3F4C031C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8C1C738F8600BBCF4E /* StringWriteUtil.cpp */; };
+		BF3F4C041C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8C1C738F8600BBCF4E /* StringWriteUtil.cpp */; };
+		BF3F4C051C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B8C1C738F8600BBCF4E /* StringWriteUtil.cpp */; };
+		BF3F4C061C738F8600BBCF4E /* StringWriteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B8D1C738F8600BBCF4E /* StringWriteUtil.h */; };
+		BF3F4C1E1C738F8600BBCF4E /* WriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B971C738F8600BBCF4E /* WriteUtil.cpp */; };
+		BF3F4C1F1C738F8600BBCF4E /* WriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B971C738F8600BBCF4E /* WriteUtil.cpp */; };
+		BF3F4C201C738F8600BBCF4E /* WriteUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3F4B971C738F8600BBCF4E /* WriteUtil.cpp */; };
+		BF3F4C211C738F8600BBCF4E /* WriteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B981C738F8600BBCF4E /* WriteUtil.h */; };
+		BF3F4C221C738F8600BBCF4E /* WrittenArraySampleMap.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3F4B991C738F8600BBCF4E /* WrittenArraySampleMap.h */; };
+		BF3F4C281C73933100BBCF4E /* libhdf5_cpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3F4C241C73933100BBCF4E /* libhdf5_cpp.dylib */; };
+		BF3F4C291C73933100BBCF4E /* libhdf5_hl_cpp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3F4C251C73933100BBCF4E /* libhdf5_hl_cpp.dylib */; };
+		BF3F4C2A1C73933100BBCF4E /* libhdf5_hl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3F4C261C73933100BBCF4E /* libhdf5_hl.dylib */; };
+		BF3F4C2B1C73933100BBCF4E /* libhdf5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3F4C271C73933100BBCF4E /* libhdf5.dylib */; };
 		BF406D211BB9B1A900CECF4E /* SoySocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF406D1D1BB9B1A900CECF4E /* SoySocket.cpp */; };
 		BF406D221BB9B1A900CECF4E /* SoySocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF406D1D1BB9B1A900CECF4E /* SoySocket.cpp */; };
 		BF406D231BB9B1A900CECF4E /* SoySocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF406D1D1BB9B1A900CECF4E /* SoySocket.cpp */; };
@@ -323,7 +445,6 @@
 		BF0BFC551C7384C600257274 /* TimeSamplingType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSamplingType.h; sourceTree = "<group>"; };
 		BF0BFC6F1C73877100257274 /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
 		BF0BFC701C73877100257274 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		BF0BFC711C73877100257274 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		BF0BFC721C73877100257274 /* Config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Config.h.in; sourceTree = "<group>"; };
 		BF0BFC731C73877100257274 /* Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Digest.h; sourceTree = "<group>"; };
 		BF0BFC741C73877100257274 /* Dimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dimensions.h; sourceTree = "<group>"; };
@@ -380,6 +501,83 @@
 		BF3EB6B81C15ACED002686F6 /* SoyJava.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyJava.h; path = src/SoyJava.h; sourceTree = "<group>"; };
 		BF3EB6BE1C15ACFB002686F6 /* SoyAvf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyAvf.h; path = src/SoyAvf.h; sourceTree = "<group>"; };
 		BF3EB6BF1C15ACFB002686F6 /* SoyAvf.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SoyAvf.mm; path = src/SoyAvf.mm; sourceTree = "<group>"; };
+		BF3F4B4B1C738BB800BBCF4E /* SoyAlembic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoyAlembic.cpp; sourceTree = "<group>"; };
+		BF3F4B4C1C738BB800BBCF4E /* SoyAlembic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoyAlembic.h; sourceTree = "<group>"; };
+		BF3F4B4E1C738CC800BBCF4E /* TParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TParser.cpp; sourceTree = "<group>"; };
+		BF3F4B4F1C738CC800BBCF4E /* TParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TParser.h; sourceTree = "<group>"; };
+		BF3F4B541C738F8600BBCF4E /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
+		BF3F4B551C738F8600BBCF4E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF3F4B561C738F8600BBCF4E /* IFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IFactory.cpp; sourceTree = "<group>"; };
+		BF3F4B571C738F8600BBCF4E /* IFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFactory.h; sourceTree = "<group>"; };
+		BF3F4B591C738F8600BBCF4E /* All.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = All.h; sourceTree = "<group>"; };
+		BF3F4B5A1C738F8600BBCF4E /* AprImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AprImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B5B1C738F8600BBCF4E /* AprImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AprImpl.h; sourceTree = "<group>"; };
+		BF3F4B5C1C738F8600BBCF4E /* ApwImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApwImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B5D1C738F8600BBCF4E /* ApwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApwImpl.h; sourceTree = "<group>"; };
+		BF3F4B5E1C738F8600BBCF4E /* ArImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B5F1C738F8600BBCF4E /* ArImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArImpl.h; sourceTree = "<group>"; };
+		BF3F4B601C738F8600BBCF4E /* AwImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AwImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B611C738F8600BBCF4E /* AwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwImpl.h; sourceTree = "<group>"; };
+		BF3F4B621C738F8600BBCF4E /* CacheImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CacheImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B631C738F8600BBCF4E /* CacheImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheImpl.h; sourceTree = "<group>"; };
+		BF3F4B641C738F8600BBCF4E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF3F4B651C738F8600BBCF4E /* CprData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CprData.cpp; sourceTree = "<group>"; };
+		BF3F4B661C738F8600BBCF4E /* CprData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CprData.h; sourceTree = "<group>"; };
+		BF3F4B671C738F8600BBCF4E /* CprImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CprImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B681C738F8600BBCF4E /* CprImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CprImpl.h; sourceTree = "<group>"; };
+		BF3F4B691C738F8600BBCF4E /* CpwData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpwData.cpp; sourceTree = "<group>"; };
+		BF3F4B6A1C738F8600BBCF4E /* CpwData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpwData.h; sourceTree = "<group>"; };
+		BF3F4B6B1C738F8600BBCF4E /* CpwImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpwImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B6C1C738F8600BBCF4E /* CpwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpwImpl.h; sourceTree = "<group>"; };
+		BF3F4B6D1C738F8600BBCF4E /* DataTypeRegistry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataTypeRegistry.cpp; sourceTree = "<group>"; };
+		BF3F4B6E1C738F8600BBCF4E /* DataTypeRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypeRegistry.h; sourceTree = "<group>"; };
+		BF3F4B6F1C738F8600BBCF4E /* Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foundation.h; sourceTree = "<group>"; };
+		BF3F4B701C738F8600BBCF4E /* HDF5Hierarchy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDF5Hierarchy.cpp; sourceTree = "<group>"; };
+		BF3F4B711C738F8600BBCF4E /* HDF5Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDF5Hierarchy.h; sourceTree = "<group>"; };
+		BF3F4B721C738F8600BBCF4E /* HDF5HierarchyReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDF5HierarchyReader.cpp; sourceTree = "<group>"; };
+		BF3F4B731C738F8600BBCF4E /* HDF5HierarchyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDF5HierarchyReader.h; sourceTree = "<group>"; };
+		BF3F4B741C738F8600BBCF4E /* HDF5HierarchyWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDF5HierarchyWriter.cpp; sourceTree = "<group>"; };
+		BF3F4B751C738F8600BBCF4E /* HDF5HierarchyWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDF5HierarchyWriter.h; sourceTree = "<group>"; };
+		BF3F4B761C738F8600BBCF4E /* HDF5Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HDF5Util.cpp; sourceTree = "<group>"; };
+		BF3F4B771C738F8600BBCF4E /* HDF5Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDF5Util.h; sourceTree = "<group>"; };
+		BF3F4B781C738F8600BBCF4E /* OrData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrData.cpp; sourceTree = "<group>"; };
+		BF3F4B791C738F8600BBCF4E /* OrData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrData.h; sourceTree = "<group>"; };
+		BF3F4B7A1C738F8600BBCF4E /* OrImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B7B1C738F8600BBCF4E /* OrImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrImpl.h; sourceTree = "<group>"; };
+		BF3F4B7C1C738F8600BBCF4E /* OwData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OwData.cpp; sourceTree = "<group>"; };
+		BF3F4B7D1C738F8600BBCF4E /* OwData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwData.h; sourceTree = "<group>"; };
+		BF3F4B7E1C738F8600BBCF4E /* OwImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OwImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B7F1C738F8600BBCF4E /* OwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwImpl.h; sourceTree = "<group>"; };
+		BF3F4B801C738F8600BBCF4E /* ReadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadUtil.cpp; sourceTree = "<group>"; };
+		BF3F4B811C738F8600BBCF4E /* ReadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadUtil.h; sourceTree = "<group>"; };
+		BF3F4B821C738F8600BBCF4E /* ReadWrite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadWrite.cpp; sourceTree = "<group>"; };
+		BF3F4B831C738F8600BBCF4E /* ReadWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadWrite.h; sourceTree = "<group>"; };
+		BF3F4B841C738F8600BBCF4E /* SimplePrImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePrImpl.h; sourceTree = "<group>"; };
+		BF3F4B851C738F8600BBCF4E /* SimplePwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePwImpl.h; sourceTree = "<group>"; };
+		BF3F4B861C738F8600BBCF4E /* SprImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SprImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B871C738F8600BBCF4E /* SprImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SprImpl.h; sourceTree = "<group>"; };
+		BF3F4B881C738F8600BBCF4E /* SpwImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpwImpl.cpp; sourceTree = "<group>"; };
+		BF3F4B891C738F8600BBCF4E /* SpwImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpwImpl.h; sourceTree = "<group>"; };
+		BF3F4B8A1C738F8600BBCF4E /* StringReadUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringReadUtil.cpp; sourceTree = "<group>"; };
+		BF3F4B8B1C738F8600BBCF4E /* StringReadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringReadUtil.h; sourceTree = "<group>"; };
+		BF3F4B8C1C738F8600BBCF4E /* StringWriteUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringWriteUtil.cpp; sourceTree = "<group>"; };
+		BF3F4B8D1C738F8600BBCF4E /* StringWriteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringWriteUtil.h; sourceTree = "<group>"; };
+		BF3F4B8F1C738F8600BBCF4E /* ArchiveTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveTests.cpp; sourceTree = "<group>"; };
+		BF3F4B901C738F8600BBCF4E /* ArrayPropertyTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayPropertyTests.cpp; sourceTree = "<group>"; };
+		BF3F4B911C738F8600BBCF4E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF3F4B921C738F8600BBCF4E /* ConstantPropsNumSampsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConstantPropsNumSampsTest.cpp; sourceTree = "<group>"; };
+		BF3F4B931C738F8600BBCF4E /* ObjectTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectTests.cpp; sourceTree = "<group>"; };
+		BF3F4B941C738F8600BBCF4E /* ScalarPropertyTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScalarPropertyTests.cpp; sourceTree = "<group>"; };
+		BF3F4B951C738F8600BBCF4E /* test1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test1.cpp; sourceTree = "<group>"; };
+		BF3F4B961C738F8600BBCF4E /* TimeSamplingTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeSamplingTests.cpp; sourceTree = "<group>"; };
+		BF3F4B971C738F8600BBCF4E /* WriteUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WriteUtil.cpp; sourceTree = "<group>"; };
+		BF3F4B981C738F8600BBCF4E /* WriteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteUtil.h; sourceTree = "<group>"; };
+		BF3F4B991C738F8600BBCF4E /* WrittenArraySampleMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrittenArraySampleMap.h; sourceTree = "<group>"; };
+		BF3F4C231C738FB000BBCF4E /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Alembic/Util/Config.h; sourceTree = "<group>"; };
+		BF3F4C241C73933100BBCF4E /* libhdf5_cpp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5_cpp.dylib; path = lib/libhdf5_cpp.dylib; sourceTree = HDF5_PATH; };
+		BF3F4C251C73933100BBCF4E /* libhdf5_hl_cpp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5_hl_cpp.dylib; path = lib/libhdf5_hl_cpp.dylib; sourceTree = HDF5_PATH; };
+		BF3F4C261C73933100BBCF4E /* libhdf5_hl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5_hl.dylib; path = lib/libhdf5_hl.dylib; sourceTree = HDF5_PATH; };
+		BF3F4C271C73933100BBCF4E /* libhdf5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhdf5.dylib; path = lib/libhdf5.dylib; sourceTree = HDF5_PATH; };
 		BF406D1D1BB9B1A900CECF4E /* SoySocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoySocket.cpp; path = src/SoySocket.cpp; sourceTree = "<group>"; };
 		BF406D1E1BB9B1A900CECF4E /* SoySocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoySocket.h; path = src/SoySocket.h; sourceTree = "<group>"; };
 		BF406D1F1BB9B1A900CECF4E /* SoyStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoyStream.cpp; path = src/SoyStream.cpp; sourceTree = "<group>"; };
@@ -481,15 +679,19 @@
 				BFCE6BD51C6E2A4E00E01F35 /* VideoToolbox.framework in Frameworks */,
 				BFCE6BD31C6E2A2700E01F35 /* ApplicationServices.framework in Frameworks */,
 				BFCE6BC91C6E2A0300E01F35 /* CoreMedia.framework in Frameworks */,
+				BF3F4C281C73933100BBCF4E /* libhdf5_cpp.dylib in Frameworks */,
 				BF0BFC9D1C73886100257274 /* libIlmThread.dylib in Frameworks */,
 				BF0BFC9B1C73886100257274 /* libIex.dylib in Frameworks */,
 				BFCE6BC61C6E296800E01F35 /* QuartzCore.framework in Frameworks */,
+				BF3F4C2A1C73933100BBCF4E /* libhdf5_hl.dylib in Frameworks */,
 				BFCE6BC71C6E2A0300E01F35 /* OpenGL.framework in Frameworks */,
 				BF0BFC9C1C73886100257274 /* libIexMath.dylib in Frameworks */,
+				BF3F4C291C73933100BBCF4E /* libhdf5_hl_cpp.dylib in Frameworks */,
 				BFCE6BC41C6E288600E01F35 /* CoreGraphics.framework in Frameworks */,
 				BF0BFC941C73884100257274 /* lib in Frameworks */,
 				BF0BFC9E1C73886100257274 /* libImath.dylib in Frameworks */,
 				BF0BFC9A1C73886100257274 /* libHalf.dylib in Frameworks */,
+				BF3F4C2B1C73933100BBCF4E /* libhdf5.dylib in Frameworks */,
 				BFCE6BC21C6E285200E01F35 /* AppKit.framework in Frameworks */,
 				BFCE6BCA1C6E2A0300E01F35 /* AVFoundation.framework in Frameworks */,
 				BFCE6BC81C6E2A0300E01F35 /* CoreVideo.framework in Frameworks */,
@@ -509,6 +711,10 @@
 		BF06DEF81B2ACD3B006F241F = {
 			isa = PBXGroup;
 			children = (
+				BF3F4C241C73933100BBCF4E /* libhdf5_cpp.dylib */,
+				BF3F4C251C73933100BBCF4E /* libhdf5_hl_cpp.dylib */,
+				BF3F4C261C73933100BBCF4E /* libhdf5_hl.dylib */,
+				BF3F4C271C73933100BBCF4E /* libhdf5.dylib */,
 				BF0BFC931C73884100257274 /* lib */,
 				BF0BFC951C73886100257274 /* libHalf.dylib */,
 				BF0BFC961C73886100257274 /* libIex.dylib */,
@@ -682,7 +888,6 @@
 			children = (
 				BF0BFC6F1C73877100257274 /* All.h */,
 				BF0BFC701C73877100257274 /* CMakeLists.txt */,
-				BF0BFC711C73877100257274 /* Config.h */,
 				BF0BFC721C73877100257274 /* Config.h.in */,
 				BF0BFC731C73877100257274 /* Digest.h */,
 				BF0BFC741C73877100257274 /* Dimensions.h */,
@@ -712,6 +917,96 @@
 				BF0BFC831C73877100257274 /* NamingTest.cpp */,
 				BF0BFC841C73877100257274 /* OperatorBoolTest.cpp */,
 				BF0BFC851C73877100257274 /* TokenMapTest.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BF3F4B531C738F8600BBCF4E /* AbcCoreFactory */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F4B541C738F8600BBCF4E /* All.h */,
+				BF3F4B551C738F8600BBCF4E /* CMakeLists.txt */,
+				BF3F4B561C738F8600BBCF4E /* IFactory.cpp */,
+				BF3F4B571C738F8600BBCF4E /* IFactory.h */,
+			);
+			path = AbcCoreFactory;
+			sourceTree = "<group>";
+		};
+		BF3F4B581C738F8600BBCF4E /* AbcCoreHDF5 */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F4B591C738F8600BBCF4E /* All.h */,
+				BF3F4B5A1C738F8600BBCF4E /* AprImpl.cpp */,
+				BF3F4B5B1C738F8600BBCF4E /* AprImpl.h */,
+				BF3F4B5C1C738F8600BBCF4E /* ApwImpl.cpp */,
+				BF3F4B5D1C738F8600BBCF4E /* ApwImpl.h */,
+				BF3F4B5E1C738F8600BBCF4E /* ArImpl.cpp */,
+				BF3F4B5F1C738F8600BBCF4E /* ArImpl.h */,
+				BF3F4B601C738F8600BBCF4E /* AwImpl.cpp */,
+				BF3F4B611C738F8600BBCF4E /* AwImpl.h */,
+				BF3F4B621C738F8600BBCF4E /* CacheImpl.cpp */,
+				BF3F4B631C738F8600BBCF4E /* CacheImpl.h */,
+				BF3F4B641C738F8600BBCF4E /* CMakeLists.txt */,
+				BF3F4B651C738F8600BBCF4E /* CprData.cpp */,
+				BF3F4B661C738F8600BBCF4E /* CprData.h */,
+				BF3F4B671C738F8600BBCF4E /* CprImpl.cpp */,
+				BF3F4B681C738F8600BBCF4E /* CprImpl.h */,
+				BF3F4B691C738F8600BBCF4E /* CpwData.cpp */,
+				BF3F4B6A1C738F8600BBCF4E /* CpwData.h */,
+				BF3F4B6B1C738F8600BBCF4E /* CpwImpl.cpp */,
+				BF3F4B6C1C738F8600BBCF4E /* CpwImpl.h */,
+				BF3F4B6D1C738F8600BBCF4E /* DataTypeRegistry.cpp */,
+				BF3F4B6E1C738F8600BBCF4E /* DataTypeRegistry.h */,
+				BF3F4B6F1C738F8600BBCF4E /* Foundation.h */,
+				BF3F4B701C738F8600BBCF4E /* HDF5Hierarchy.cpp */,
+				BF3F4B711C738F8600BBCF4E /* HDF5Hierarchy.h */,
+				BF3F4B721C738F8600BBCF4E /* HDF5HierarchyReader.cpp */,
+				BF3F4B731C738F8600BBCF4E /* HDF5HierarchyReader.h */,
+				BF3F4B741C738F8600BBCF4E /* HDF5HierarchyWriter.cpp */,
+				BF3F4B751C738F8600BBCF4E /* HDF5HierarchyWriter.h */,
+				BF3F4B761C738F8600BBCF4E /* HDF5Util.cpp */,
+				BF3F4B771C738F8600BBCF4E /* HDF5Util.h */,
+				BF3F4B781C738F8600BBCF4E /* OrData.cpp */,
+				BF3F4B791C738F8600BBCF4E /* OrData.h */,
+				BF3F4B7A1C738F8600BBCF4E /* OrImpl.cpp */,
+				BF3F4B7B1C738F8600BBCF4E /* OrImpl.h */,
+				BF3F4B7C1C738F8600BBCF4E /* OwData.cpp */,
+				BF3F4B7D1C738F8600BBCF4E /* OwData.h */,
+				BF3F4B7E1C738F8600BBCF4E /* OwImpl.cpp */,
+				BF3F4B7F1C738F8600BBCF4E /* OwImpl.h */,
+				BF3F4B801C738F8600BBCF4E /* ReadUtil.cpp */,
+				BF3F4B811C738F8600BBCF4E /* ReadUtil.h */,
+				BF3F4B821C738F8600BBCF4E /* ReadWrite.cpp */,
+				BF3F4B831C738F8600BBCF4E /* ReadWrite.h */,
+				BF3F4B841C738F8600BBCF4E /* SimplePrImpl.h */,
+				BF3F4B851C738F8600BBCF4E /* SimplePwImpl.h */,
+				BF3F4B861C738F8600BBCF4E /* SprImpl.cpp */,
+				BF3F4B871C738F8600BBCF4E /* SprImpl.h */,
+				BF3F4B881C738F8600BBCF4E /* SpwImpl.cpp */,
+				BF3F4B891C738F8600BBCF4E /* SpwImpl.h */,
+				BF3F4B8A1C738F8600BBCF4E /* StringReadUtil.cpp */,
+				BF3F4B8B1C738F8600BBCF4E /* StringReadUtil.h */,
+				BF3F4B8C1C738F8600BBCF4E /* StringWriteUtil.cpp */,
+				BF3F4B8D1C738F8600BBCF4E /* StringWriteUtil.h */,
+				BF3F4B8E1C738F8600BBCF4E /* Tests */,
+				BF3F4B971C738F8600BBCF4E /* WriteUtil.cpp */,
+				BF3F4B981C738F8600BBCF4E /* WriteUtil.h */,
+				BF3F4B991C738F8600BBCF4E /* WrittenArraySampleMap.h */,
+			);
+			path = AbcCoreHDF5;
+			sourceTree = "<group>";
+		};
+		BF3F4B8E1C738F8600BBCF4E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF3F4B8F1C738F8600BBCF4E /* ArchiveTests.cpp */,
+				BF3F4B901C738F8600BBCF4E /* ArrayPropertyTests.cpp */,
+				BF3F4B911C738F8600BBCF4E /* CMakeLists.txt */,
+				BF3F4B921C738F8600BBCF4E /* ConstantPropsNumSampsTest.cpp */,
+				BF3F4B931C738F8600BBCF4E /* ObjectTests.cpp */,
+				BF3F4B941C738F8600BBCF4E /* ScalarPropertyTests.cpp */,
+				BF3F4B951C738F8600BBCF4E /* test1.cpp */,
+				BF3F4B961C738F8600BBCF4E /* TimeSamplingTests.cpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -828,6 +1123,8 @@
 		BFEBD6611C737FE700539560 /* Alembic */ = {
 			isa = PBXGroup;
 			children = (
+				BF3F4B531C738F8600BBCF4E /* AbcCoreFactory */,
+				BF3F4B581C738F8600BBCF4E /* AbcCoreHDF5 */,
 				BF0BFC6E1C73877100257274 /* Util */,
 				BF0BFC221C7384C600257274 /* AbcCoreAbstract */,
 				BF0BFBB21C73819E00257274 /* Abc */,
@@ -854,7 +1151,12 @@
 				BF4090E91B5EDA7100643329 /* FrameworkInfo.plist */,
 				BF1499AD1B4D640D00DA2575 /* PopAbc.cpp */,
 				BFAD33D51B624D4300D3E7A6 /* PopAbc.cs */,
+				BF3F4C231C738FB000BBCF4E /* Config.h */,
 				BF1499AE1B4D640D00DA2575 /* PopAbc.h */,
+				BF3F4B4B1C738BB800BBCF4E /* SoyAlembic.cpp */,
+				BF3F4B4E1C738CC800BBCF4E /* TParser.cpp */,
+				BF3F4B4F1C738CC800BBCF4E /* TParser.h */,
+				BF3F4B4C1C738BB800BBCF4E /* SoyAlembic.h */,
 				BF80C3251C3EC03500EBE03E /* PopAbcFramework.h */,
 				BF1499AF1B4D640D00DA2575 /* PopUnity.cpp */,
 				BF1499B01B4D640D00DA2575 /* PopUnity.h */,
@@ -869,24 +1171,56 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3F4BCC1C738F8600BBCF4E /* Foundation.h in Headers */,
+				BF3F4BD01C738F8600BBCF4E /* HDF5Hierarchy.h in Headers */,
+				BF3F4BA11C738F8600BBCF4E /* All.h in Headers */,
 				BFB255FE1BA1EA5A00F30239 /* SoyRuntimeLibrary.h in Headers */,
 				BF40911C1B5EDC0400643329 /* PopAbc.h in Headers */,
 				BF192B0B1BF10A9D00324911 /* SoyHttpConnection.h in Headers */,
+				BF3F4BDC1C738F8600BBCF4E /* HDF5Util.h in Headers */,
+				BF3F4BB11C738F8600BBCF4E /* AwImpl.h in Headers */,
+				BF3F4BF01C738F8600BBCF4E /* ReadUtil.h in Headers */,
+				BF3F4BE41C738F8600BBCF4E /* OrImpl.h in Headers */,
 				BF406D341BB9B1C500CECF4E /* SoyProtocol.h in Headers */,
 				BF3EB6C01C15ACFB002686F6 /* SoyAvf.h in Headers */,
+				BF3F4BC31C738F8600BBCF4E /* CpwData.h in Headers */,
 				BF406D281BB9B1A900CECF4E /* SoyStream.h in Headers */,
+				BF3F4C211C738F8600BBCF4E /* WriteUtil.h in Headers */,
+				BF3F4BAD1C738F8600BBCF4E /* ArImpl.h in Headers */,
 				BF8990B01BE01A5E00FF81FB /* SoySocketStream.h in Headers */,
+				BF3F4BB51C738F8600BBCF4E /* CacheImpl.h in Headers */,
+				BF3F4BD81C738F8600BBCF4E /* HDF5HierarchyWriter.h in Headers */,
 				BF7225B31BAF0E2700550AD8 /* SoyMemFile.h in Headers */,
 				BF406D3D1BB9C8B200CECF4E /* SoyMulticast.h in Headers */,
 				BF80C3261C3EC03500EBE03E /* PopAbcFramework.h in Headers */,
+				BF3F4BA01C738F8600BBCF4E /* IFactory.h in Headers */,
+				BF3F4BBF1C738F8600BBCF4E /* CprImpl.h in Headers */,
+				BF3F4C021C738F8600BBCF4E /* StringReadUtil.h in Headers */,
+				BF3F4C061C738F8600BBCF4E /* StringWriteUtil.h in Headers */,
 				BF192B041BF10A9400324911 /* SoyH264.h in Headers */,
 				BF406D301BB9B1C500CECF4E /* SoyHttp.h in Headers */,
 				BF3EB6B61C15ACE4002686F6 /* SoyUnity.h in Headers */,
+				BF3F4BC71C738F8600BBCF4E /* CpwImpl.h in Headers */,
 				BF40911D1B5EDC0400643329 /* PopUnity.h in Headers */,
+				BF3F4BD41C738F8600BBCF4E /* HDF5HierarchyReader.h in Headers */,
 				BF8990C71BE7F31400FF81FB /* heaparray.hpp in Headers */,
+				BF3F4BF41C738F8600BBCF4E /* ReadWrite.h in Headers */,
+				BF3F4BA91C738F8600BBCF4E /* ApwImpl.h in Headers */,
+				BF3F4BFA1C738F8600BBCF4E /* SprImpl.h in Headers */,
 				BF7225B91BAF38D300550AD8 /* SoyRef.h in Headers */,
+				BF3F4BBB1C738F8600BBCF4E /* CprData.h in Headers */,
+				BF3F4BF61C738F8600BBCF4E /* SimplePwImpl.h in Headers */,
+				BF3F4B9A1C738F8600BBCF4E /* All.h in Headers */,
 				BF8990C51BE7F2E700FF81FB /* array.hpp in Headers */,
+				BF3F4BFE1C738F8600BBCF4E /* SpwImpl.h in Headers */,
 				BF4B116E1C667FFE001D9EAE /* SoyMath.h in Headers */,
+				BF3F4BCB1C738F8600BBCF4E /* DataTypeRegistry.h in Headers */,
+				BF3F4C221C738F8600BBCF4E /* WrittenArraySampleMap.h in Headers */,
+				BF3F4BE01C738F8600BBCF4E /* OrData.h in Headers */,
+				BF3F4BEC1C738F8600BBCF4E /* OwImpl.h in Headers */,
+				BF3F4BA51C738F8600BBCF4E /* AprImpl.h in Headers */,
+				BF3F4BE81C738F8600BBCF4E /* OwData.h in Headers */,
+				BF3F4BF51C738F8600BBCF4E /* SimplePrImpl.h in Headers */,
 				BF11911D1BDAF98000DD627C /* SoyMedia.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1012,6 +1346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3F4BB71C738F8600BBCF4E /* CMakeLists.txt in Resources */,
+				BF3F4B9C1C738F8600BBCF4E /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,7 +1357,9 @@
 			files = (
 				BF0BFC881C73877100257274 /* CMakeLists.txt in Resources */,
 				BF0BFC891C73877100257274 /* Config.h.in in Resources */,
+				BF3F4B9B1C738F8600BBCF4E /* CMakeLists.txt in Resources */,
 				BF0BFC5D1C7384C600257274 /* CMakeLists.txt in Resources */,
+				BF3F4BB61C738F8600BBCF4E /* CMakeLists.txt in Resources */,
 				BF0BFBF61C73819E00257274 /* CMakeLists.txt in Resources */,
 				BF0BFC671C7384C600257274 /* CMakeLists.txt in Resources */,
 			);
@@ -1065,14 +1403,28 @@
 			files = (
 				BF4091161B5EDB6800643329 /* SoyThread.cpp in Sources */,
 				BF7225B21BAF0E2700550AD8 /* SoyMemFile.cpp in Sources */,
+				BF3F4BFD1C738F8600BBCF4E /* SpwImpl.cpp in Sources */,
+				BF3F4BEB1C738F8600BBCF4E /* OwImpl.cpp in Sources */,
 				BF7225B81BAF38D300550AD8 /* SoyRef.cpp in Sources */,
+				BF3F4BB01C738F8600BBCF4E /* AwImpl.cpp in Sources */,
 				BF40910A1B5EDB6800643329 /* SoyArray.cpp in Sources */,
 				BF406D231BB9B1A900CECF4E /* SoySocket.cpp in Sources */,
+				BF3F4BF91C738F8600BBCF4E /* SprImpl.cpp in Sources */,
 				BF4091001B5EDAA600643329 /* PopUnity.cpp in Sources */,
+				BF3F4B9F1C738F8600BBCF4E /* IFactory.cpp in Sources */,
+				BF3F4BF31C738F8600BBCF4E /* ReadWrite.cpp in Sources */,
+				BF3F4BD31C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */,
 				BF406D401BB9C8B200CECF4E /* SoyMulticast.mm in Sources */,
+				BF3F4BAC1C738F8600BBCF4E /* ArImpl.cpp in Sources */,
+				BF3F4BE71C738F8600BBCF4E /* OwData.cpp in Sources */,
+				BF3F4C011C738F8600BBCF4E /* StringReadUtil.cpp in Sources */,
 				BF80C32E1C3EC7F400EBE03E /* SoySocketStream.cpp in Sources */,
+				BF3F4BDF1C738F8600BBCF4E /* OrData.cpp in Sources */,
+				BF3F4BC21C738F8600BBCF4E /* CpwData.cpp in Sources */,
 				BF40910B1B5EDB6800643329 /* SoyAssert.cpp in Sources */,
 				BF406D331BB9B1C500CECF4E /* SoyProtocol.cpp in Sources */,
+				BF3F4BD71C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */,
+				BF3F4C051C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */,
 				BF40910C1B5EDB6800643329 /* SoyDebug.cpp in Sources */,
 				BF4091121B5EDB6800643329 /* SoyPixels.cpp in Sources */,
 				BF4B116D1C667FFE001D9EAE /* SoyMath.cpp in Sources */,
@@ -1081,21 +1433,34 @@
 				BF4091111B5EDB6800643329 /* SoyOpenglContext.cpp in Sources */,
 				BF11911B1BDAF98000DD627C /* SoyMedia.cpp in Sources */,
 				BFBC3DA21BC8081D00CEE3D5 /* SoyTime.mm in Sources */,
+				BF3F4BBE1C738F8600BBCF4E /* CprImpl.cpp in Sources */,
 				BF627D971C622EF900BB840B /* SoyFilesystem.cpp in Sources */,
 				BF40910D1B5EDB6800643329 /* SoyDebug.mm in Sources */,
 				BF4091191B5EDB6800643329 /* SoyVector.cpp in Sources */,
+				BF3F4BB41C738F8600BBCF4E /* CacheImpl.cpp in Sources */,
 				BF3EB6C31C15ACFB002686F6 /* SoyAvf.mm in Sources */,
+				BF3F4BEF1C738F8600BBCF4E /* ReadUtil.cpp in Sources */,
 				BF3EB6B41C15ACE4002686F6 /* SoyUnity.cpp in Sources */,
+				BF3F4BCA1C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */,
+				BF3F4BE31C738F8600BBCF4E /* OrImpl.cpp in Sources */,
+				BF3F4B521C738CCB00BBCF4E /* TParser.cpp in Sources */,
 				BFB256011BA1EA5A00F30239 /* SoyRuntimeLibrary.cpp in Sources */,
 				BF4091131B5EDB6800643329 /* SoyPng.cpp in Sources */,
 				BF4091101B5EDB6800643329 /* SoyShader.cpp in Sources */,
 				BF4090FF1B5EDAA600643329 /* PopAbc.cpp in Sources */,
 				BF406D271BB9B1A900CECF4E /* SoyStream.cpp in Sources */,
 				BF4091141B5EDB6800643329 /* SoyString.mm in Sources */,
+				BF3F4BDB1C738F8600BBCF4E /* HDF5Util.cpp in Sources */,
 				BF192B091BF10A9D00324911 /* SoyHttpConnection.cpp in Sources */,
 				BF40910F1B5EDB6800643329 /* SoyOpengl.cpp in Sources */,
+				BF3F4BA81C738F8600BBCF4E /* ApwImpl.cpp in Sources */,
+				BF3F4C201C738F8600BBCF4E /* WriteUtil.cpp in Sources */,
+				BF3F4BCF1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */,
+				BF3F4BA41C738F8600BBCF4E /* AprImpl.cpp in Sources */,
+				BF3F4BC61C738F8600BBCF4E /* CpwImpl.cpp in Sources */,
 				BF406D2F1BB9B1C500CECF4E /* SoyHttp.cpp in Sources */,
 				BF4091181B5EDB6800643329 /* SoyTypes.cpp in Sources */,
+				BF3F4BBA1C738F8600BBCF4E /* CprData.cpp in Sources */,
 				BF4091151B5EDB6800643329 /* SoyString.cpp in Sources */,
 				BF627D9B1C622EF900BB840B /* SoyFilesystem.mm in Sources */,
 				BF4091171B5EDB6800643329 /* SoyTime.cpp in Sources */,
@@ -1107,36 +1472,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3F4BC51C738F8600BBCF4E /* CpwImpl.cpp in Sources */,
 				BF0BFC8A1C73877100257274 /* Murmur3.cpp in Sources */,
 				BF41F9E11B4BDC1E0015614A /* memheap.cpp in Sources */,
 				BF7225B11BAF0E2700550AD8 /* SoyMemFile.cpp in Sources */,
 				BF0BFC031C73819E00257274 /* Reference.cpp in Sources */,
 				BF3EB6C21C15ACFB002686F6 /* SoyAvf.mm in Sources */,
+				BF3F4BA71C738F8600BBCF4E /* ApwImpl.cpp in Sources */,
+				BF3F4BA31C738F8600BBCF4E /* AprImpl.cpp in Sources */,
 				BF7225B71BAF38D300550AD8 /* SoyRef.cpp in Sources */,
 				BF0BFBFE1C73819E00257274 /* OArchive.cpp in Sources */,
 				BF41F9C81B4BDB270015614A /* SoyAssert.cpp in Sources */,
+				BF3F4BF81C738F8600BBCF4E /* SprImpl.cpp in Sources */,
 				BF0BFC611C7384C600257274 /* ObjectReader.cpp in Sources */,
 				BF0BFC571C7384C600257274 /* ArchiveWriter.cpp in Sources */,
 				BF406D221BB9B1A900CECF4E /* SoySocket.cpp in Sources */,
 				BF5B071A1B5D06AF00C489C6 /* SoyShader.cpp in Sources */,
+				BF3F4BE61C738F8600BBCF4E /* OwData.cpp in Sources */,
 				BF0BFBFF1C73819E00257274 /* OArrayProperty.cpp in Sources */,
 				BF406D3F1BB9C8B200CECF4E /* SoyMulticast.mm in Sources */,
+				BF3F4BC11C738F8600BBCF4E /* CpwData.cpp in Sources */,
 				BF0BFC601C7384C600257274 /* Foundation.cpp in Sources */,
+				BF3F4BF21C738F8600BBCF4E /* ReadWrite.cpp in Sources */,
 				BF0BFBFC1C73819E00257274 /* ISampleSelector.cpp in Sources */,
+				BF3F4BEA1C738F8600BBCF4E /* OwImpl.cpp in Sources */,
 				BF41F9CA1B4BDB270015614A /* SoyTime.cpp in Sources */,
+				BF3F4BEE1C738F8600BBCF4E /* ReadUtil.cpp in Sources */,
 				BF406D321BB9B1C500CECF4E /* SoyProtocol.cpp in Sources */,
 				BF0BFC661C7384C600257274 /* ScalarSample.cpp in Sources */,
 				BF0BFC561C7384C600257274 /* ArchiveReader.cpp in Sources */,
 				BF0BFC5E1C7384C600257274 /* CompoundPropertyReader.cpp in Sources */,
 				BF0BFBF51C73819E00257274 /* ArchiveInfo.cpp in Sources */,
 				BF1499D31B4D660F00DA2575 /* SoyOpengl.cpp in Sources */,
+				BF3F4C001C738F8600BBCF4E /* StringReadUtil.cpp in Sources */,
 				BF0BFC621C7384C600257274 /* ObjectWriter.cpp in Sources */,
 				BF0BFC001C73819E00257274 /* OCompoundProperty.cpp in Sources */,
 				BF0BFBFD1C73819E00257274 /* IScalarProperty.cpp in Sources */,
+				BF3F4BB31C738F8600BBCF4E /* CacheImpl.cpp in Sources */,
 				BF41F9AA1B4BD1920015614A /* SoyTypes.cpp in Sources */,
 				BF0BFC921C73877100257274 /* TokenMap.cpp in Sources */,
 				BF0BFBFB1C73819E00257274 /* IObject.cpp in Sources */,
 				BF0BFC6D1C7384C600257274 /* TimeSamplingType.cpp in Sources */,
+				BF3F4BAB1C738F8600BBCF4E /* ArImpl.cpp in Sources */,
 				BF0BFC8B1C73877100257274 /* Naming.cpp in Sources */,
 				BF0BFC5A1C7384C600257274 /* ArraySample.cpp in Sources */,
 				BF4B116C1C667FFE001D9EAE /* SoyMath.cpp in Sources */,
@@ -1144,39 +1521,55 @@
 				BF0BFC6C1C7384C600257274 /* TimeSampling.cpp in Sources */,
 				BF3EB6B31C15ACE4002686F6 /* SoyUnity.cpp in Sources */,
 				BF0BFC011C73819E00257274 /* OObject.cpp in Sources */,
+				BF3F4C041C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */,
 				BF41F9E51B4BDC2F0015614A /* SoyThread.cpp in Sources */,
 				BF1499C31B4D640D00DA2575 /* PopUnity.cpp in Sources */,
+				BF3F4BC91C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */,
 				BF11911A1BDAF98000DD627C /* SoyMedia.cpp in Sources */,
 				BF627D961C622EF900BB840B /* SoyFilesystem.cpp in Sources */,
 				BFBC3DA11BC8081D00CEE3D5 /* SoyTime.mm in Sources */,
+				BF3F4BFC1C738F8600BBCF4E /* SpwImpl.cpp in Sources */,
 				BF0BFC631C7384C600257274 /* ReadArraySampleCache.cpp in Sources */,
 				BF1499DF1B4D67CB00DA2575 /* SoyPng.cpp in Sources */,
+				BF3F4BE21C738F8600BBCF4E /* OrImpl.cpp in Sources */,
+				BF3F4BD61C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */,
 				BF41F9CE1B4BDBA30015614A /* SoyString.cpp in Sources */,
+				BF3F4BDA1C738F8600BBCF4E /* HDF5Util.cpp in Sources */,
 				BF0BFC5F1C7384C600257274 /* CompoundPropertyWriter.cpp in Sources */,
+				BF3F4BB91C738F8600BBCF4E /* CprData.cpp in Sources */,
 				BF0BFC581C7384C600257274 /* ArrayPropertyReader.cpp in Sources */,
 				BF8990AE1BE019FC00FF81FB /* SoySocketStream.cpp in Sources */,
+				BF3F4BCE1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */,
 				BF0BFBF81C73819E00257274 /* IArchive.cpp in Sources */,
 				BFB256001BA1EA5A00F30239 /* SoyRuntimeLibrary.cpp in Sources */,
 				BF1499DB1B4D67AF00DA2575 /* SoyPixels.cpp in Sources */,
 				BF0BFBFA1C73819E00257274 /* ICompoundProperty.cpp in Sources */,
+				BF3F4B9E1C738F8600BBCF4E /* IFactory.cpp in Sources */,
 				BF1499C11B4D640D00DA2575 /* PopAbc.cpp in Sources */,
 				BF192B081BF10A9D00324911 /* SoyHttpConnection.cpp in Sources */,
+				BF3F4BAF1C738F8600BBCF4E /* AwImpl.cpp in Sources */,
 				BF41F9D91B4BDBC60015614A /* SoyDebug.mm in Sources */,
 				BF0BFC651C7384C600257274 /* ScalarPropertyWriter.cpp in Sources */,
+				BF3F4BBD1C738F8600BBCF4E /* CprImpl.cpp in Sources */,
 				BF0BFC021C73819E00257274 /* OScalarProperty.cpp in Sources */,
 				BF0BFC5C1C7384C600257274 /* BasePropertyWriter.cpp in Sources */,
 				BF406D261BB9B1A900CECF4E /* SoyStream.cpp in Sources */,
 				BF41F9DD1B4BDBD80015614A /* SoyEvent.cpp in Sources */,
 				BF1499CF1B4D646B00DA2575 /* SoyVector.cpp in Sources */,
+				BF3F4B501C738CCA00BBCF4E /* TParser.cpp in Sources */,
 				BF406D2E1BB9B1C500CECF4E /* SoyHttp.cpp in Sources */,
 				BF192B011BF10A9400324911 /* SoyH264.cpp in Sources */,
+				BF3F4BDE1C738F8600BBCF4E /* OrData.cpp in Sources */,
 				BF1499D71B4D663800DA2575 /* SoyOpenglContext.cpp in Sources */,
 				BF0BFC5B1C7384C600257274 /* BasePropertyReader.cpp in Sources */,
 				BF0BFC591C7384C600257274 /* ArrayPropertyWriter.cpp in Sources */,
+				BF3F4C1F1C738F8600BBCF4E /* WriteUtil.cpp in Sources */,
+				BF3F4BD21C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */,
 				BF0BFBF91C73819E00257274 /* IArrayProperty.cpp in Sources */,
 				BF41F9D21B4BDBA80015614A /* SoyArray.cpp in Sources */,
 				BF0BFBF71C73819E00257274 /* ErrorHandler.cpp in Sources */,
 				BF0BFC041C73819E00257274 /* SourceName.cpp in Sources */,
+				BF3F4B4D1C738BB800BBCF4E /* SoyAlembic.cpp in Sources */,
 				BF0BFC8C1C73877100257274 /* SpookyV2.cpp in Sources */,
 				BF0BFC641C7384C600257274 /* ScalarPropertyReader.cpp in Sources */,
 				BF627D9A1C622EF900BB840B /* SoyFilesystem.mm in Sources */,
@@ -1190,14 +1583,28 @@
 			files = (
 				BF1499DA1B4D67AF00DA2575 /* SoyPixels.cpp in Sources */,
 				BF7225B01BAF0E2700550AD8 /* SoyMemFile.cpp in Sources */,
+				BF3F4BFB1C738F8600BBCF4E /* SpwImpl.cpp in Sources */,
+				BF3F4BE91C738F8600BBCF4E /* OwImpl.cpp in Sources */,
 				BF7225B61BAF38D300550AD8 /* SoyRef.cpp in Sources */,
+				BF3F4BAE1C738F8600BBCF4E /* AwImpl.cpp in Sources */,
 				BF41F9CD1B4BDBA30015614A /* SoyString.cpp in Sources */,
 				BF406D211BB9B1A900CECF4E /* SoySocket.cpp in Sources */,
+				BF3F4BF71C738F8600BBCF4E /* SprImpl.cpp in Sources */,
 				BF5B07191B5D06AF00C489C6 /* SoyShader.cpp in Sources */,
+				BF3F4B9D1C738F8600BBCF4E /* IFactory.cpp in Sources */,
+				BF3F4BF11C738F8600BBCF4E /* ReadWrite.cpp in Sources */,
+				BF3F4BD11C738F8600BBCF4E /* HDF5HierarchyReader.cpp in Sources */,
 				BF627D991C622EF900BB840B /* SoyFilesystem.mm in Sources */,
+				BF3F4BAA1C738F8600BBCF4E /* ArImpl.cpp in Sources */,
+				BF3F4BE51C738F8600BBCF4E /* OwData.cpp in Sources */,
+				BF3F4BFF1C738F8600BBCF4E /* StringReadUtil.cpp in Sources */,
 				BF406D3E1BB9C8B200CECF4E /* SoyMulticast.mm in Sources */,
+				BF3F4BDD1C738F8600BBCF4E /* OrData.cpp in Sources */,
+				BF3F4BC01C738F8600BBCF4E /* CpwData.cpp in Sources */,
 				BF41F9E01B4BDC1E0015614A /* memheap.cpp in Sources */,
 				BF406D311BB9B1C500CECF4E /* SoyProtocol.cpp in Sources */,
+				BF3F4BD51C738F8600BBCF4E /* HDF5HierarchyWriter.cpp in Sources */,
+				BF3F4C031C738F8600BBCF4E /* StringWriteUtil.cpp in Sources */,
 				BF1499DE1B4D67CB00DA2575 /* SoyPng.cpp in Sources */,
 				BF41F9C71B4BDB270015614A /* SoyAssert.cpp in Sources */,
 				BF2E8B121B55270D00CBD1AC /* SoyString.mm in Sources */,
@@ -1206,21 +1613,34 @@
 				BF41F9C91B4BDB270015614A /* SoyTime.cpp in Sources */,
 				BF1191191BDAF98000DD627C /* SoyMedia.cpp in Sources */,
 				BFBC3DA01BC8081D00CEE3D5 /* SoyTime.mm in Sources */,
+				BF3F4BBC1C738F8600BBCF4E /* CprImpl.cpp in Sources */,
 				BF41F9E41B4BDC2F0015614A /* SoyThread.cpp in Sources */,
 				BF1499C21B4D640D00DA2575 /* PopUnity.cpp in Sources */,
 				BF8990AD1BE019FC00FF81FB /* SoySocketStream.cpp in Sources */,
+				BF3F4BB21C738F8600BBCF4E /* CacheImpl.cpp in Sources */,
 				BF4B116B1C667FFE001D9EAE /* SoyMath.cpp in Sources */,
+				BF3F4BED1C738F8600BBCF4E /* ReadUtil.cpp in Sources */,
 				BFB255FF1BA1EA5A00F30239 /* SoyRuntimeLibrary.cpp in Sources */,
+				BF3F4BC81C738F8600BBCF4E /* DataTypeRegistry.cpp in Sources */,
+				BF3F4BE11C738F8600BBCF4E /* OrImpl.cpp in Sources */,
+				BF3F4B511C738CCA00BBCF4E /* TParser.cpp in Sources */,
 				BF41F9D61B4BDBC60015614A /* SoyDebug.cpp in Sources */,
 				BF1499C01B4D640D00DA2575 /* PopAbc.cpp in Sources */,
 				BF192B071BF10A9D00324911 /* SoyHttpConnection.cpp in Sources */,
 				BF41F9A91B4BD1920015614A /* SoyTypes.cpp in Sources */,
 				BF3EB6B21C15ACE4002686F6 /* SoyUnity.cpp in Sources */,
 				BF406D251BB9B1A900CECF4E /* SoyStream.cpp in Sources */,
+				BF3F4BD91C738F8600BBCF4E /* HDF5Util.cpp in Sources */,
 				BF41F9DC1B4BDBD80015614A /* SoyEvent.cpp in Sources */,
 				BF1499CE1B4D646B00DA2575 /* SoyVector.cpp in Sources */,
+				BF3F4BA61C738F8600BBCF4E /* ApwImpl.cpp in Sources */,
+				BF3F4C1E1C738F8600BBCF4E /* WriteUtil.cpp in Sources */,
+				BF3F4BCD1C738F8600BBCF4E /* HDF5Hierarchy.cpp in Sources */,
+				BF3F4BA21C738F8600BBCF4E /* AprImpl.cpp in Sources */,
+				BF3F4BC41C738F8600BBCF4E /* CpwImpl.cpp in Sources */,
 				BF406D2D1BB9B1C500CECF4E /* SoyHttp.cpp in Sources */,
 				BF192B001BF10A9400324911 /* SoyH264.cpp in Sources */,
+				BF3F4BB81C738F8600BBCF4E /* CprData.cpp in Sources */,
 				BF1499D61B4D663800DA2575 /* SoyOpenglContext.cpp in Sources */,
 				BF41F9D81B4BDBC60015614A /* SoyDebug.mm in Sources */,
 				BF41F9D11B4BDBA80015614A /* SoyArray.cpp in Sources */,
@@ -1331,6 +1751,8 @@
 					"$(ALEMBIC_PATH)/lib",
 					"$(OPENEXR_PATH)/include/OpenEXR",
 					/usr/local/Cellar/ilmbase/2.1.0/include/OpenEXR,
+					"$(SRCROOT)/src",
+					"$(HDF5_PATH)/include",
 				);
 				INFOPLIST_FILE = src/BundleInfo.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @rpath/Frameworks @rpath/Resources Frameworks/";
@@ -1340,6 +1762,7 @@
 					"$(OPENCAST_PATH)/build/Debug/",
 					/usr/local/Cellar/openexr/2.1.0/lib,
 					/usr/local/Cellar/ilmbase/2.1.0/lib,
+					/usr/local/Cellar/hdf5/1.8.16_1/lib,
 				);
 				PRODUCT_NAME = PopAbcIos;
 				SDKROOT = macosx10.10;

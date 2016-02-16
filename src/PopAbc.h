@@ -1,7 +1,7 @@
 #pragma once
 
 #include "PopUnity.h"
-
+#include "TParser.h"
 
 
 __export Unity::ulong	PopAbc_Alloc(const char* Filename);
@@ -17,26 +17,11 @@ namespace PopAbc
 	class TInstance;
 	typedef Unity::ulong	TInstanceRef;
 	
-	class TParser;
-	class TParams;
-
-	std::shared_ptr<TInstance>	Alloc(TParams Params,std::shared_ptr<Opengl::TContext> OpenglContext);
+	std::shared_ptr<TInstance>	Alloc(TParserParams Params,std::shared_ptr<Opengl::TContext> OpenglContext);
 	std::shared_ptr<TInstance>	GetInstance(TInstanceRef Instance);
 	bool						Free(TInstanceRef Instance);
 };
 
-
-
-
-class PopAbc::TParser
-{
-public:
-};
-
-class PopAbc::TParams
-{
-public:
-};
 
 
 
@@ -46,7 +31,7 @@ public:
 	TInstance()=delete;
 	TInstance(const TInstance& Copy)=delete;
 public:
-	explicit TInstance(const TInstanceRef& Ref,TParams Params,std::shared_ptr<Opengl::TContext> OpenglContext);
+	explicit TInstance(const TInstanceRef& Ref,TParserParams Params,std::shared_ptr<Opengl::TContext> OpenglContext);
 	
 	TInstanceRef	GetRef() const		{	return mRef;	}
 

@@ -14,7 +14,8 @@ namespace PopAbc
 
 __export Unity::ulong	PopAbc_Alloc(const char* Filename)
 {
-	PopAbc::TParams Params;
+	TParserParams Params;
+	Params.mFilename = Filename;
 	try
 	{
 		auto OpenglContext = Unity::GetOpenglContextPtr();
@@ -116,7 +117,7 @@ __export Unity::sint		PopAbc_PopData(Unity::ulong Instance,char* Buffer,Unity::u
 }
 
 
-std::shared_ptr<PopAbc::TInstance> PopAbc::Alloc(TParams Params,std::shared_ptr<Opengl::TContext> OpenglContext)
+std::shared_ptr<PopAbc::TInstance> PopAbc::Alloc(TParserParams Params,std::shared_ptr<Opengl::TContext> OpenglContext)
 {
 	gInstancesLock.lock();
 	static TInstanceRef gInstanceRefCounter(1000);
@@ -169,7 +170,7 @@ bool PopAbc::Free(TInstanceRef Instance)
 
 
 
-PopAbc::TInstance::TInstance(const TInstanceRef& Ref,TParams Params,std::shared_ptr<Opengl::TContext> OpenglContext) :
+PopAbc::TInstance::TInstance(const TInstanceRef& Ref,TParserParams Params,std::shared_ptr<Opengl::TContext> OpenglContext) :
 	mRef			( Ref ),
 	mOpenglContext	( OpenglContext )
 {

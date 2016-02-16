@@ -18,5 +18,8 @@ public:
 	{
 		
 	}
+	virtual ~TParser()
+	{
+	}
 };
 

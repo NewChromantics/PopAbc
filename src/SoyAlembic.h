@@ -2,7 +2,7 @@
 
 
 #include "TParser.h"
-#include <Alembic/abc/OArchive.h>
+#include <Alembic/abc/IArchive.h>
 
 namespace Alembic
 {
@@ -16,7 +16,7 @@ public:
 	TArchive(const TParserParams& Params);
 	
 public:
-	Abc::v7::ArchiveReaderPtr	mArchiveReader;
+	Abc::IArchive	mArchiveReader;
 };
 
 

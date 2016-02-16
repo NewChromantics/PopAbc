@@ -1,5 +1,6 @@
 #include "PopAbc.h"
 #include "PopUnity.h"
+#include "SoyAlembic.h"
 
 
 namespace PopAbc
@@ -174,7 +175,7 @@ PopAbc::TInstance::TInstance(const TInstanceRef& Ref,TParserParams Params,std::s
 	mRef			( Ref ),
 	mOpenglContext	( OpenglContext )
 {
-	throw Soy::AssertException("unsupported on this platform");
+	mParser.reset( new Alembic::TArchive( Params ) );
 }
 
 void PopAbc::TInstance::PushTexture(Opengl::TTexture Texture)

@@ -77,7 +77,7 @@ public class PopAbc
 	private static extern int		PopAbc_PopData(ulong Instance,StringBuilder Buffer,uint BufferSize);
 
 
-	public PopAbc(String Filename="Test")
+	public PopAbc(String Filename)
 	{
 		mInstance = PopAbc_Alloc (Filename);
 

@@ -588,9 +588,9 @@
 		BF406D2C1BB9B1C500CECF4E /* SoyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyProtocol.h; path = src/SoyProtocol.h; sourceTree = "<group>"; };
 		BF406D3B1BB9C8B200CECF4E /* SoyMulticast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyMulticast.h; path = src/SoyMulticast.h; sourceTree = "<group>"; };
 		BF406D3C1BB9C8B200CECF4E /* SoyMulticast.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SoyMulticast.mm; path = src/SoyMulticast.mm; sourceTree = "<group>"; };
-		BF4090E61B5EDA7100643329 /* PopAbcIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopAbcIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4090E61B5EDA7100643329 /* PopAbcFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopAbcFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4090E91B5EDA7100643329 /* FrameworkInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FrameworkInfo.plist; sourceTree = "<group>"; };
-		BF41F9741B4BD0700015614A /* PopAbcIos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopAbcIos.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF41F9741B4BD0700015614A /* PopAbcOsx.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopAbcOsx.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF41F9A71B4BD1920015614A /* SoyTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoyTypes.cpp; path = src/SoyTypes.cpp; sourceTree = "<group>"; };
 		BF41F9A81B4BD1920015614A /* SoyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoyTypes.h; path = src/SoyTypes.h; sourceTree = "<group>"; };
 		BF41F9AB1B4BD2320015614A /* SoyTypes_Android.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoyTypes_Android.h; path = src/SoyTypes_Android.h; sourceTree = "<group>"; };
@@ -1137,8 +1137,8 @@
 			isa = PBXGroup;
 			children = (
 				BFEEDD6D1B46A7E5002F9CFA /* libPopAbcIos.a */,
-				BF41F9741B4BD0700015614A /* PopAbcIos.bundle */,
-				BF4090E61B5EDA7100643329 /* PopAbcIos.framework */,
+				BF41F9741B4BD0700015614A /* PopAbcOsx.bundle */,
+				BF4090E61B5EDA7100643329 /* PopAbcFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1260,7 +1260,7 @@
 			);
 			name = PopAbcFramework;
 			productName = PopMovieTextureOsxFramework;
-			productReference = BF4090E61B5EDA7100643329 /* PopAbcIos.framework */;
+			productReference = BF4090E61B5EDA7100643329 /* PopAbcFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BF41F9731B4BD0700015614A /* PopAbcOsx */ = {
@@ -1278,7 +1278,7 @@
 			);
 			name = PopAbcOsx;
 			productName = PopMovieTextureOsx;
-			productReference = BF41F9741B4BD0700015614A /* PopAbcIos.bundle */;
+			productReference = BF41F9741B4BD0700015614A /* PopAbcOsx.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		BFEEDD6C1B46A7E5002F9CFA /* PopAbcIos */ = {
@@ -1694,7 +1694,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = PopCastAndroid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Master;
 		};
@@ -1728,7 +1728,6 @@
 				New_Setting = "";
 				POPMOVIE_WATERMARK = 0;
 				PRODUCT_BUNDLE_IDENTIFIER = "NewChromantics.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = PopAbcIos;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1764,7 +1763,6 @@
 					/usr/local/Cellar/ilmbase/2.1.0/lib,
 					/usr/local/Cellar/hdf5/1.8.16_1/lib,
 				);
-				PRODUCT_NAME = PopAbcIos;
 				SDKROOT = macosx10.10;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1785,7 +1783,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = PopAbcIos;
 				SDKROOT = iphoneos;
 				SEPARATE_STRIP = NO;
 				SKIP_INSTALL = YES;

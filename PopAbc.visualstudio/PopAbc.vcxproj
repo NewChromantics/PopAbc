@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Cuda|Win32">
-      <Configuration>Cuda</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Cuda|x64">
-      <Configuration>Cuda</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -17,164 +9,259 @@
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Watermarked|Win32">
-      <Configuration>Watermarked</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Watermarked|x64">
-      <Configuration>Watermarked</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\AndroidMovieDecoder.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\src\CudaMovieDecoder.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\src\HwndExtractor.cpp" />
-    <ClCompile Include="..\src\MfCapture.cpp" />
-    <ClCompile Include="..\src\MfDecoder.cpp" />
-    <ClCompile Include="..\src\PopMovieDecoder.cpp" />
-    <ClCompile Include="..\src\PopMovieTexture.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySample.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\Foundation.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ReadArraySampleCache.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarSample.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSampling.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSamplingType.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreFactory\IFactory.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ApwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ArImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CacheImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\DataTypeRegistry.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Hierarchy.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyReader.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyWriter.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Util.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadWrite.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SpwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringReadUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringWriteUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WriteUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ApwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ArImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\MetaDataMap.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadWrite.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SprImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SpwImpl.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\StreamManager.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WriteUtil.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ArchiveInfo.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ErrorHandler.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IArchive.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IArrayProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ICompoundProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IObject.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ISampleSelector.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IScalarProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OArchive.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OArrayProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OCompoundProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OObject.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OScalarProperty.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\Reference.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\SourceName.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IArchive.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IGroup.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IStreams.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OArchive.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OData.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OGroup.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OStream.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\Murmur3.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\Naming.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\SpookyV2.cpp" />
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\TokenMap.cpp" />
+    <ClCompile Include="..\src\PopAbc.cpp" />
     <ClCompile Include="..\src\PopUnity.cpp" />
-    <ClCompile Include="..\src\SoyKinect.cpp" />
-    <ClCompile Include="..\src\TAudioGraph.cpp" />
-    <ClCompile Include="..\src\TBlitter.cpp" />
-    <ClCompile Include="..\src\TBlitterOpengl.cpp" />
-    <ClCompile Include="..\src\TBlitterDirectx.cpp" />
-    <ClCompile Include="..\src\TDecoderPlaylist.cpp" />
-    <ClCompile Include="..\src\TestMovieDecoder.cpp" />
-    <ClCompile Include="..\src\TGifExtractor.cpp" />
-    <ClCompile Include="..\src\TJpegExtractor.cpp" />
-    <ClCompile Include="..\src\TPerformanceGraph.cpp" />
-    <ClCompile Include="..\src\TSourceManager.cpp" />
-    <ClCompile Include="..\src\TStreamDecoder.cpp" />
+    <ClCompile Include="..\src\SoyAlembic.cpp" />
+    <ClCompile Include="..\src\TParser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\AndroidMovieDecoder.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="..\src\AvfCompressor.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="..\src\AvfMovieDecoder.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="..\src\AvfVideoCapture.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="..\src\CudaMovieDecoder.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="..\src\HwndExtractor.h" />
-    <ClInclude Include="..\src\MfCapture.h" />
-    <ClInclude Include="..\src\MfDecoder.h" />
-    <ClInclude Include="..\src\PopMovieDecoder.h" />
-    <ClInclude Include="..\src\PopMovieTexture.h" />
-    <ClInclude Include="..\src\PopMovieTextureOsxFramework.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySample.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySampleKey.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\DataType.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ForwardDeclarations.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\MetaData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectHeader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\PropertyHeader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ReadArraySampleCache.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarSample.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSampling.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSamplingType.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreFactory\IFactory.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ApwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ArImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CacheImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\DataTypeRegistry.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Hierarchy.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyReader.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyWriter.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Util.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadWrite.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SimplePrImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SimplePwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SpwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringReadUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringWriteUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WriteUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WrittenArraySampleMap.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ApwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ArImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\MetaDataMap.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadWrite.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SprImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SpwImpl.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\StreamManager.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WriteUtil.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WrittenSampleMap.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ArchiveInfo.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Argument.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Base.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ErrorHandler.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IArchive.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IArrayProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IBaseProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ICompoundProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IObject.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISampleSelector.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IScalarProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISchema.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISchemaObject.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ITypedArrayProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ITypedScalarProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OArchive.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OArrayProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OBaseProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OCompoundProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OObject.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OScalarProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OSchema.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OSchemaObject.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OTypedArrayProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OTypedScalarProperty.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Reference.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\SourceName.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\TypedArraySample.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\TypedPropertyTraits.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IArchive.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IGroup.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IStreams.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OArchive.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OData.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OGroup.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OStream.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\All.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Digest.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Dimensions.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Exception.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Export.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Foundation.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Murmur3.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Naming.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\OperatorBool.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\PlainOldDataType.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\SpookyV2.h" />
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\TokenMap.h" />
+    <ClInclude Include="..\src\Alembic\Util\Config.h" />
+    <ClInclude Include="..\src\PopAbc.h" />
+    <ClInclude Include="..\src\PopAbcFramework.h" />
     <ClInclude Include="..\src\PopUnity.h" />
-    <ClInclude Include="..\src\SoyKinect.h" />
-    <ClInclude Include="..\src\TAudioGraph.h" />
-    <ClInclude Include="..\src\TBlitter.h" />
-    <ClInclude Include="..\src\TBlitterOpengl.h" />
-    <ClInclude Include="..\src\TBlitterDirectx.h" />
-    <ClInclude Include="..\src\TDecoderPlaylist.h" />
-    <ClInclude Include="..\src\TestMovieDecoder.h" />
-    <ClInclude Include="..\src\TGifExtractor.h" />
-    <ClInclude Include="..\src\TJpegExtractor.h" />
-    <ClInclude Include="..\src\TPerformanceGraph.h" />
-    <ClInclude Include="..\src\TSourceManager.h" />
-    <ClInclude Include="..\src\TStreamDecoder.h" />
+    <ClInclude Include="..\src\SoyAlembic.h" />
+    <ClInclude Include="..\src\TParser.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\alembic\lib\Alembic\Util\Config.h.in" />
     <None Include="..\AndroidBuild.sh" />
     <None Include="..\CopyCSharpFiles.sh" />
     <None Include="..\IosPostBuild.sh" />
     <None Include="..\MakePackage.sh" />
     <None Include="..\OsxPostBuild.sh" />
-    <None Include="..\src\AvfCompressor.mm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\src\AvfMovieDecoder.mm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\src\AvfVideoCapture.mm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">true</ExcludedFromBuild>
-    </None>
-    <None Include="..\src\Blit.glsl.vert" />
-    <None Include="..\src\Blit.hlsl.vert" />
-    <None Include="..\src\Blit2D.glsl.frag" />
-    <None Include="..\src\BlitBarGraph.hlsl.frag" />
-    <None Include="..\src\BlitError.glsl.frag" />
-    <None Include="..\src\BlitError.hlsl.frag" />
-    <None Include="..\src\BlitFreenectDepth10mm.glsl.frag" />
-    <None Include="..\src\BlitOesExternal.glsl.frag" />
-    <None Include="..\src\BlitRectangle.glsl.frag" />
-    <None Include="..\src\BlitRgba.hlsl.frag" />
-    <None Include="..\src\BlitTest.glsl.frag" />
-    <None Include="..\src\BlitTest.hlsl.frag" />
-    <None Include="..\src\BlitWatermark.glsl.frag" />
-    <None Include="..\src\BlitWatermark.hlsl.frag" />
-    <None Include="..\src\BlitYuv.glsl.frag" />
-    <None Include="..\src\BlitYuv.hlsl.frag" />
-    <None Include="..\src\BlitYuv_8_88_Full.glsl.frag" />
-    <None Include="..\src\BlitYuv_8_88_Full.hlsl.frag" />
-    <None Include="..\src\BlitYuv_8_88_Video.glsl.frag" />
-    <None Include="..\src\BlitYuv_8_88_Video.hlsl.frag" />
-    <None Include="..\src\BlitYuv_8_8_8_Full.glsl.frag" />
-    <None Include="..\src\BlitYuv_8_8_8_Full.hlsl.frag" />
-    <None Include="..\src\BlitYuv_8_8_8_Video.glsl.frag" />
-    <None Include="..\src\BlitYuv_8_8_8_Video.hlsl.frag" />
-    <None Include="..\src\PopMovieTexture.cs" />
+    <None Include="..\src\PopAbc.cs" />
     <None Include="..\WindowsPostBuild.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CMakeLists.txt" />
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CMakeLists.txt" />
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CMakeLists.txt" />
+    <Text Include="..\..\alembic\lib\Alembic\Abc\CMakeLists.txt" />
+    <Text Include="..\..\alembic\lib\Alembic\Ogawa\CMakeLists.txt" />
+    <Text Include="..\..\alembic\lib\Alembic\Util\CMakeLists.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{64811728-CD20-4F2C-899B-E3BF3D4B032E}</ProjectGuid>
@@ -194,26 +281,6 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -223,59 +290,28 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\SoyLib\Soy_Windows.props" />
     <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
-    <Import Project="NoWatermark.props" />
+    <Import Project="Master.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\SoyLib\Soy_Windows.props" />
     <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
-    <Import Project="NoWatermark.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\SoyLib\Soy_Windows.props" />
-    <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
-    <Import Project="Watermarked.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\SoyLib\Soy_Windows.props" />
-    <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
-    <Import Project="Watermarked.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\SoyLib\Soy_Windows.props" />
-    <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\SoyLib\Soy_Windows.props" />
-    <Import Project="..\..\SoyLib\SoyApp_Windows.props" />
+    <Import Project="Master.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>$(ProjectName)</TargetName>
+    <IncludePath>$(ALEMBIC_PATH);../src/;$(OPENEXR_PATH)/IlmBase/Half;$(OPENEXR_PATH)/IlmBase/IexMath;$(OPENEXR_PATH)/IlmBase/IMath;$(OPENEXR_PATH)/IlmBase/config.windows;$(OPENEXR_PATH)/IlmBase/Iex;$(HDF5_PATH)/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENEXR_PATH)\IlmBase\vc\vc12\IlmBase\x64\Release_4ByteStruct;$(HDF5_PATH)/lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>$(ProjectName)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">
-    <TargetName>$(ProjectName)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">
-    <TargetName>$(ProjectName)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">
-    <TargetName>$(ProjectName)</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
     </ClCompile>
     <Link />
     <Link />
@@ -288,6 +324,7 @@ $(ProjectDir)\..\WindowsPostBuild.bat</Command>
     </PostBuildEvent>
     <Link>
       <Profile>true</Profile>
+      <AdditionalDependencies>half.lib;iex.lib;hdf5.lib;libzlib.lib;libszip.lib;hdf5_cpp.lib;hdf5_hl.lib;hdf5_f90cstub.lib;hdf5_tools.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -307,74 +344,6 @@ $(ProjectDir)\..\WindowsPostBuild.bat</Command>
     <Link>
       <Profile>true</Profile>
     </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|x64'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-    </ClCompile>
-    <Link />
-    <Link />
-    <PostBuildEvent>
-      <Command>SET SRCROOT=$(ProjectDir)..
-SET PROJECT=$(ProjectName)
-SET BUILD_DLL=$(TargetPath)
-
-$(ProjectDir)\..\WindowsPostBuild.bat</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Watermarked|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-    </ClCompile>
-    <Link />
-    <Link />
-    <PostBuildEvent>
-      <Command>SET SRCROOT=$(ProjectDir)..
-SET PROJECT=$(ProjectName)
-SET BUILD_DLL=$(TargetPath)
-
-$(ProjectDir)\..\WindowsPostBuild.bat</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|x64'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <PreprocessorDefinitions>ENABLE_CUDA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link />
-    <Link>
-      <OutputFile>$(TargetPath)</OutputFile>
-      <AdditionalDependencies>cudart.lib;nvcuvid.lib;cuda.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-    <PostBuildEvent>
-      <Command>SET SRCROOT=$(ProjectDir)..
-SET PROJECT=$(ProjectName)
-SET BUILD_DLL=$(TargetPath)
-
-$(ProjectDir)\..\WindowsPostBuild.bat</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Cuda|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <PreprocessorDefinitions>ENABLE_CUDA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
-    <Link />
-    <Link>
-      <OutputFile>$(TargetPath)</OutputFile>
-      <AdditionalDependencies>cudart.lib;nvcuvid.lib;cuda.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-    <PostBuildEvent>
-      <Command>SET SRCROOT=$(ProjectDir)..
-SET PROJECT=$(ProjectName)
-SET BUILD_DLL=$(TargetPath)
-
-$(ProjectDir)\..\WindowsPostBuild.bat</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

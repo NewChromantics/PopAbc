@@ -8,204 +8,735 @@
     <Filter Include="Scripts">
       <UniqueIdentifier>{55e4f83c-108f-4a4d-b4b5-bda3404cf6d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Alembic">
+      <UniqueIdentifier>{1bd48444-4feb-4964-94af-c4b997477cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\AbcCoreFactory">
+      <UniqueIdentifier>{16a448f8-2a48-496f-8150-b809c9ea07e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alembic">
+      <UniqueIdentifier>{eb0e2036-a4f9-451e-b100-a2a2dd0ac1a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alembic\Util">
+      <UniqueIdentifier>{de130931-4869-445a-95d9-1ba1722d2f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\Abc">
+      <UniqueIdentifier>{8f3229af-b6b1-4d4f-a553-7f17d58b541e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\AbcCoreAbstract">
+      <UniqueIdentifier>{70805c31-502b-4ccb-bb8e-e999cb9fbe89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\AbcCoreHDF5">
+      <UniqueIdentifier>{fa7550d7-3aae-4695-95b4-6a8375079df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\Util">
+      <UniqueIdentifier>{05e2f95b-dc10-41aa-bb5d-be9d857c6624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\Ogawa">
+      <UniqueIdentifier>{4d589db3-a03f-46c4-b0a4-5bb5a2e84815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alembic\AbcCoreOgawa">
+      <UniqueIdentifier>{8fb3d8f0-ba60-42b0-9423-6110f0ee4e98}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\PopMovieDecoder.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreFactory\IFactory.cpp">
+      <Filter>Alembic\AbcCoreFactory</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\PopMovieTexture.cpp">
+    <ClCompile Include="..\src\PopAbc.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\PopUnity.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TestMovieDecoder.cpp">
+    <ClCompile Include="..\src\SoyAlembic.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\CudaMovieDecoder.cpp">
+    <ClCompile Include="..\src\TParser.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TDecoderPlaylist.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ArchiveInfo.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TBlitterDirectx.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ErrorHandler.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TBlitterOpengl.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IArchive.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\AndroidMovieDecoder.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IArrayProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TBlitter.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ICompoundProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\MfDecoder.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IObject.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TDecoderPlaylist.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\ISampleSelector.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\SoyKinect.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\IScalarProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TStreamDecoder.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OArchive.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TPerformanceGraph.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OArrayProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\HwndExtractor.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OCompoundProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\MfCapture.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OObject.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TAudioGraph.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\OScalarProperty.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TSourceManager.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\Reference.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TJpegExtractor.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Abc\SourceName.cpp">
+      <Filter>Alembic\Abc</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\TGifExtractor.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySample.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\Foundation.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ReadArraySampleCache.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyReader.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyWriter.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarSample.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSampling.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSamplingType.cpp">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AprImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ApwImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ArImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AwImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CacheImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprData.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwData.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\DataTypeRegistry.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Hierarchy.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyReader.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyWriter.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Util.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrData.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwData.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadUtil.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadWrite.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SprImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SpwImpl.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringReadUtil.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringWriteUtil.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WriteUtil.cpp">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\Murmur3.cpp">
+      <Filter>Alembic\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\Naming.cpp">
+      <Filter>Alembic\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\SpookyV2.cpp">
+      <Filter>Alembic\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Util\TokenMap.cpp">
+      <Filter>Alembic\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IGroup.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IStreams.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OArchive.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OData.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OGroup.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\OStream.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IArchive.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\Ogawa\IData.cpp">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ApwImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ArImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AwImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprData.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwData.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\MetaDataMap.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrData.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwData.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadUtil.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadWrite.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SprImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SpwImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\StreamManager.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WriteUtil.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.cpp">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\PopMovieDecoder.h">
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreFactory\IFactory.h">
+      <Filter>Alembic\AbcCoreFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PopAbc.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\PopMovieTexture.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\PopMovieTextureOsxFramework.h">
+    <ClInclude Include="..\src\PopAbcFramework.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\src\PopUnity.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TestMovieDecoder.h">
+    <ClInclude Include="..\src\SoyAlembic.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\CudaMovieDecoder.h">
+    <ClInclude Include="..\src\TParser.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TDecoderPlaylist.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\src\Alembic\Util\Config.h">
+      <Filter>src\Alembic\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TBlitterDirectx.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\All.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TBlitterOpengl.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ArchiveInfo.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\AndroidMovieDecoder.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Argument.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\AvfMovieDecoder.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Base.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\AvfVideoCapture.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ErrorHandler.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TBlitter.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Foundation.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\MfDecoder.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IArchive.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TDecoderPlaylist.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IArrayProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\SoyKinect.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IBaseProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\AvfCompressor.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ICompoundProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TPerformanceGraph.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IObject.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TStreamDecoder.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISampleSelector.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\HwndExtractor.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\IScalarProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\MfCapture.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISchema.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TAudioGraph.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ISchemaObject.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TSourceManager.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ITypedArrayProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TJpegExtractor.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\ITypedScalarProperty.h">
+      <Filter>Alembic\Abc</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\TGifExtractor.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OArchive.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OArrayProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OBaseProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OCompoundProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OObject.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OScalarProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OSchema.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OSchemaObject.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OTypedArrayProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\OTypedScalarProperty.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\Reference.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\SourceName.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\TypedArraySample.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Abc\TypedPropertyTraits.h">
+      <Filter>Alembic\Abc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\All.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArchiveWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArrayPropertyWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySample.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ArraySampleKey.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\BasePropertyWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CompoundPropertyWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\DataType.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ForwardDeclarations.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\Foundation.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\MetaData.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectHeader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ObjectWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\PropertyHeader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ReadArraySampleCache.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyReader.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarPropertyWriter.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\ScalarSample.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSampling.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\TimeSamplingType.h">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\All.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AprImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ApwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ArImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\AwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CacheImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprData.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CprImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwData.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CpwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\DataTypeRegistry.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\Foundation.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Hierarchy.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyReader.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5HierarchyWriter.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\HDF5Util.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrData.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OrImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwData.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\OwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadUtil.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\ReadWrite.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SimplePrImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SimplePwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SprImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\SpwImpl.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringReadUtil.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\StringWriteUtil.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WriteUtil.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\WrittenArraySampleMap.h">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Foundation.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Murmur3.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Naming.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\OperatorBool.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\PlainOldDataType.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\SpookyV2.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\TokenMap.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\All.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Digest.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Dimensions.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Exception.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Util\Export.h">
+      <Filter>Alembic\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IData.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IGroup.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IStreams.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OArchive.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OData.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OGroup.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\OStream.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\All.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\Foundation.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\Ogawa\IArchive.h">
+      <Filter>Alembic\Ogawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ApwImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ArImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AwImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprData.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CprImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwData.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CpwImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\Foundation.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\MetaDataMap.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrData.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OrImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwData.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\OwImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadUtil.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\ReadWrite.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SprImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\SpwImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\StreamManager.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WriteUtil.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\WrittenSampleMap.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\All.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.h">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\src\PopMovieTexture.cs">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\AvfMovieDecoder.mm">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\AvfVideoCapture.mm">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\AvfCompressor.mm">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\Blit.glsl.vert">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\Blit2D.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitError.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitFreenectDepth10mm.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitOesExternal.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitRectangle.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitTest.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitWatermark.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\Blit.hlsl.vert">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitBarGraph.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitError.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitRgba.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitTest.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitWatermark.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
     <None Include="..\AndroidBuild.sh">
       <Filter>Scripts</Filter>
     </None>
@@ -224,35 +755,31 @@
     <None Include="..\WindowsPostBuild.bat">
       <Filter>Scripts</Filter>
     </None>
-    <None Include="..\src\BlitYuv_8_88_Full.glsl.frag">
+    <None Include="..\src\PopAbc.cs">
       <Filter>src</Filter>
     </None>
-    <None Include="..\src\BlitYuv.glsl.frag">
-      <Filter>src</Filter>
+    <None Include="..\..\alembic\lib\Alembic\Util\Config.h.in">
+      <Filter>Alembic\Util</Filter>
     </None>
-    <None Include="..\src\BlitYuv_8_8_8_Full.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_8_8_Video.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_88_Video.glsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_8_8_Full.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_8_8_Video.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_88_Full.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\src\BlitYuv_8_88_Video.hlsl.frag">
-      <Filter>src</Filter>
-    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\alembic\lib\Alembic\Abc\CMakeLists.txt">
+      <Filter>Alembic\Abc</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreAbstract\CMakeLists.txt">
+      <Filter>Alembic\AbcCoreAbstract</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreHDF5\CMakeLists.txt">
+      <Filter>Alembic\AbcCoreHDF5</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\Util\CMakeLists.txt">
+      <Filter>Alembic\Util</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\Ogawa\CMakeLists.txt">
+      <Filter>Alembic\Ogawa</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CMakeLists.txt">
+      <Filter>Alembic\AbcCoreOgawa</Filter>
+    </Text>
   </ItemGroup>
 </Project>

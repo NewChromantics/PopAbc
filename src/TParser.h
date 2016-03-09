@@ -21,5 +21,7 @@ public:
 	virtual ~TParser()
 	{
 	}
+
+	virtual void	GetMeta(std::stringstream& Meta)=0;
 };
 

@@ -249,7 +249,9 @@ void PopAbc::TInstance::PopData(std::stringstream& Data)
 
 void PopAbc::TInstance::GetMeta(std::stringstream& Meta)
 {
-	Meta << "I am the meta data";
+	Soy::Assert( mParser!=nullptr, "Parser expected");
+
+	mParser->GetMeta( Meta );
 }
 
 

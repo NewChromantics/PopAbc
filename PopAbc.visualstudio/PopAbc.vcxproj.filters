@@ -38,6 +38,9 @@
     <Filter Include="Alembic\AbcCoreOgawa">
       <UniqueIdentifier>{8fb3d8f0-ba60-42b0-9423-6110f0ee4e98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Alembic\AbcGeom">
+      <UniqueIdentifier>{515632ef-d285-455c-b09b-517aef9dcfaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreFactory\IFactory.cpp">
@@ -321,6 +324,84 @@
     </ClCompile>
     <ClCompile Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.cpp">
       <Filter>Alembic\AbcCoreOgawa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ONuPatch.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OPoints.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OPolyMesh.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OSubD.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OXform.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\Visibility.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\XformOp.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\XformSample.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ArchiveBounds.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\Basis.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\CameraSample.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\FilmBackXformOp.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\GeometryScope.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ICamera.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ICurves.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\IFaceSet.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ILight.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\INuPatch.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\IPoints.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\IPolyMesh.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\ISubD.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\IXform.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OCamera.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OCurves.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OFaceSet.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alembic\lib\Alembic\AbcGeom\OLight.cpp">
+      <Filter>Alembic\AbcGeom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -735,6 +816,111 @@
     <ClInclude Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\AprImpl.h">
       <Filter>Alembic\AbcCoreOgawa</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OLight.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ONuPatch.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OPoints.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OPolyMesh.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OSubD.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OXform.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\SchemaInfoDeclarations.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\Visibility.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\XformOp.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\XformSample.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\All.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ArchiveBounds.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\Basis.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\CameraSample.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\CurveType.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\FaceSetExclusivity.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\FilmBackXformOp.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\Foundation.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\GeometryScope.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ICamera.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ICurves.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IFaceSet.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IGeomBase.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IGeomParam.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ILight.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\INuPatch.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IPoints.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IPolyMesh.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\ISubD.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\IXform.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OCamera.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OCurves.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OFaceSet.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OGeomBase.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alembic\lib\Alembic\AbcGeom\OGeomParam.h">
+      <Filter>Alembic\AbcGeom</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\AndroidBuild.sh">
@@ -780,6 +966,9 @@
     </Text>
     <Text Include="..\..\alembic\lib\Alembic\AbcCoreOgawa\CMakeLists.txt">
       <Filter>Alembic\AbcCoreOgawa</Filter>
+    </Text>
+    <Text Include="..\..\alembic\lib\Alembic\AbcGeom\CMakeLists.txt">
+      <Filter>Alembic\AbcGeom</Filter>
     </Text>
   </ItemGroup>
 </Project>

@@ -11,6 +11,11 @@ __export bool			PopAbc_PushTexture2D(Unity::ulong Instance,Unity::NativeTextureP
 __export Unity::sint	PopAbc_PopData(Unity::ulong Instance,char* Buffer,Unity::uint BufferSize);
 
 
+__export const char*	PopAbc_GetMeta(Unity::ulong Instance);
+
+//	generic release-locked-string func to dispose of memory once it's been used
+__export void			PopAbc_ReleaseString(const char* String);
+
 
 namespace PopAbc
 {
@@ -37,6 +42,7 @@ public:
 
 	void			PushTexture(Opengl::TTexture Texture);
 	void			PopData(std::stringstream& Data);
+	void			GetMeta(std::stringstream& Meta);
 	
 public:
 	std::shared_ptr<Opengl::TContext>	mOpenglContext;

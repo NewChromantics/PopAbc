@@ -3,12 +3,72 @@
 #include "SoyAlembic.h"
 
 
+class TStringManager;
+
+
 namespace PopAbc
 {
 	std::mutex gInstancesLock;
 	std::vector<std::shared_ptr<PopAbc::TInstance> >	gInstances;
+
+	std::shared_ptr<TStringManager>		gStringManager;
+	TStringManager&						GetStringManager();
 };
 
+
+
+class TStringManager
+{
+public:
+	TStringManager() :
+		mHeap		( true, true, "StringManager" ),
+		mStrings	( mHeap )
+	{
+	}
+
+	const char*							LockString(const std::string& String);
+	void								UnlockString(const char* String);
+
+public:
+	prmem::Heap							mHeap;
+	std::mutex							mStringsLock;
+	Array<std::string>					mStrings;
+};
+
+
+
+TStringManager& PopAbc::GetStringManager()
+{
+	if ( !gStringManager )
+		gStringManager.reset( new TStringManager );
+	return *gStringManager;
+}
+
+const char* TStringManager::LockString(const std::string& String)
+{
+	std::lock_guard<std::mutex> Lock( mStringsLock );
+	
+	auto& NewString = mStrings.PushBack( String );
+	return NewString.c_str();
+}
+
+void TStringManager::UnlockString(const char* String)
+{
+	std::lock_guard<std::mutex> Lock( mStringsLock );
+
+	auto Index = mStrings.FindIndex( String );
+	if ( Index == -1 )
+		return;
+
+	mStrings.RemoveBlock( Index, 1 );
+}
+
+
+__export void PopAbc_ReleaseString(const char* String)
+{
+	auto& StringManager = PopAbc::GetStringManager();
+	StringManager.UnlockString( String );
+}
 
 
 
@@ -187,4 +247,36 @@ void PopAbc::TInstance::PopData(std::stringstream& Data)
 	throw Soy::AssertException("todo");
 }
 
+void PopAbc::TInstance::GetMeta(std::stringstream& Meta)
+{
+	Meta << "I am the meta data";
+}
+
+
+__export const char*	PopAbc_GetMeta(Unity::ulong Instance)
+{
+	try
+	{
+		auto pInstance = PopAbc::GetInstance( Instance );
+		if ( !pInstance )
+			return nullptr;
+
+		//	extract meta
+		std::stringstream Meta;
+		pInstance->GetMeta( Meta );
+
+		auto& StringManager = PopAbc::GetStringManager();
+		return StringManager.LockString( Meta.str() );
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return nullptr;
+	}
+	catch(...)
+	{
+		std::Debug << __func__ << " unknown exception" << std::endl;
+		return nullptr;
+	}
+}
 

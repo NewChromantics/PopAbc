@@ -9,13 +9,13 @@ public class PopAbc
 {
 #if UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
 	private const string PluginName = "PopAbcOsx";
+#elif UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
+	private const string PluginName = "PopAbc";
 #elif UNITY_ANDROID
 	private const string PluginName = "PopAbc";
 #elif UNITY_IOS
 	//private const string PluginName = "PopAbcIos";
 	private const string PluginName = "__Internal";
-#elif UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
-	private const string PluginName = "PopAbc";
 #endif
 
 	private ulong	mInstance = 0;
@@ -73,9 +73,14 @@ public class PopAbc
 	[DllImport (PluginName)]
 	private static extern bool		PopAbc_PushRenderTexture(ulong Instance,System.IntPtr TextureId,int Width,int Height,RenderTextureFormat textureFormat);
 
-	[DllImport (PluginName,CallingConvention=CallingConvention.Cdecl)]
-	private static extern int		PopAbc_PopData(ulong Instance,StringBuilder Buffer,uint BufferSize);
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern int		PopAbc_PopData(ulong Instance, StringBuilder Buffer, uint BufferSize);
 
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern string	PopAbc_GetMeta(ulong Instance);
+
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern void		PopAbc_ReleaseString(string Str);
 
 	public PopAbc(String Filename)
 	{
@@ -168,6 +173,19 @@ public class PopAbc
 	static public string GetVersion()
 	{
 		return "GIT_REVISION";
+	}
+
+
+	public string GetMeta()
+	{
+		string MetaStringC = PopAbc_GetMeta(mInstance);
+		if ( MetaStringC == null )
+			return null;
+
+		//	copy string
+		string MetaString = MetaStringC;
+		PopAbc_ReleaseString(MetaStringC);
+		return MetaString;
 	}
 
 }

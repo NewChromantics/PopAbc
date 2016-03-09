@@ -23,12 +23,17 @@ public class AbcExample : MonoBehaviour {
 
 	public void LoadAbc()
 	{
+		Debug.Log("Load abc("+mFilenameText.text+")");
 		LoadAbc (mFilenameText.text);
+
 	}
 
 	public void LoadAbc(string Filename)
 	{
 		mAbc = new PopAbc( Filename );
+
+		string Meta = mAbc.GetMeta();
+		Debug.Log ("Meta is " + Meta);
 	}
 
 	void Update()

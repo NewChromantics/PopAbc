@@ -31,13 +31,11 @@ __export Unity::ulong	PopAbc_Alloc(const char* Filename)
 		std::Debug << "Failed to allocate movie: " << e.what() << std::endl;
 		return 0;
 	}
-	/*
 	catch (...)
 	{
 		std::Debug << "Failed to allocate movie: Unknown exception in " << __func__ << std::endl;
 		return 0;
 	}
-	 */
 	
 	return 0;
 }

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{55e4f83c-108f-4a4d-b4b5-bda3404cf6d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\PopMovieDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PopMovieTexture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PopUnity.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TestMovieDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CudaMovieDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TDecoderPlaylist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TBlitterDirectx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TBlitterOpengl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AndroidMovieDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TBlitter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MfDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TDecoderPlaylist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SoyKinect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TStreamDecoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TPerformanceGraph.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HwndExtractor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MfCapture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TAudioGraph.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TSourceManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TJpegExtractor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TGifExtractor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\PopMovieDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PopMovieTexture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PopMovieTextureOsxFramework.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PopUnity.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TestMovieDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CudaMovieDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TDecoderPlaylist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TBlitterDirectx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TBlitterOpengl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AndroidMovieDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AvfMovieDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AvfVideoCapture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TBlitter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MfDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TDecoderPlaylist.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SoyKinect.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AvfCompressor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TPerformanceGraph.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TStreamDecoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HwndExtractor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MfCapture.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TAudioGraph.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TSourceManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TJpegExtractor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TGifExtractor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\PopMovieTexture.cs">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\AvfMovieDecoder.mm">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\AvfVideoCapture.mm">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\AvfCompressor.mm">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\Blit.glsl.vert">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\Blit2D.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitError.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitFreenectDepth10mm.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitOesExternal.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitRectangle.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitTest.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitWatermark.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\Blit.hlsl.vert">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitBarGraph.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitError.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitRgba.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitTest.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitWatermark.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\AndroidBuild.sh">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\CopyCSharpFiles.sh">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\IosPostBuild.sh">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\MakePackage.sh">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\OsxPostBuild.sh">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\WindowsPostBuild.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_88_Full.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_8_8_Full.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_8_8_Video.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_88_Video.glsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_8_8_Full.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_8_8_Video.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_88_Full.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\src\BlitYuv_8_88_Video.hlsl.frag">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

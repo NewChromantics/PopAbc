@@ -10,6 +10,7 @@
 namespace Geo
 {
 	class TNode;
+	typedef vec3x<size_t> TTriangle;
 }
 
 class Geo::TNode
@@ -20,7 +21,7 @@ public:
 	Soy::Bounds3f						mBounds;
 	Array<std::shared_ptr<TNode>>		mChildren;
 	Array<vec3f>						mVertexPositions;
-	Array<uint16>						mTriangleIndexes;
+	Array<TTriangle>					mTriangles;
 	std::map<std::string,std::string>	mMeta;			//	unhandled meta data
 };
 

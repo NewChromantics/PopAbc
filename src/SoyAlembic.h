@@ -2,10 +2,11 @@
 
 
 #include "TParser.h"
-#include <Alembic/abc/IArchive.h>
-#include <Alembic/abc/IObject.h>
 #include <SoyThread.h>
 #include <future>
+#include <Alembic/abc/IArchive.h>
+#include <Alembic/abc/IObject.h>
+#include <Alembic/AbcGeom/IPolyMesh.h>
 
 
 class TJsonWriter;
@@ -14,6 +15,7 @@ namespace Alembic
 {
 	class TArchive;
 	std::shared_ptr<Geo::TNode>	ParseGeo(Abc::IObject& Object);
+	void						ParseMesh(Geo::TNode& Node,AbcGeom::IPolyMesh& Mesh);
 }
 
 

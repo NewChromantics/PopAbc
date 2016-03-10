@@ -8,21 +8,30 @@
 
 
 
-void MakeTriangles(ArrayBridge<Geo::TTriangle>&& Triangles,ArrayBridge<int>&& FaceIndexes)
+void MakeTriangles(ArrayBridge<Geo::TTriangle>&& Triangles,ArrayBridge<int>&& FaceIndexes,size_t VertexCount)
 {
+	auto MakeTriangle = [&](int a,int b,int c)
+	{
+		auto va = FaceIndexes[a];
+		auto vb = FaceIndexes[b];
+		auto vc = FaceIndexes[c];
+		Soy::Assert( va < VertexCount, "Triangle vertex a index out of bounds");
+		Soy::Assert( vb < VertexCount, "Triangle vertex b index out of bounds");
+		Soy::Assert( vc < VertexCount, "Triangle vertex c index out of bounds");
+		Geo::TTriangle Triangle( va, vb, vc );
+		Triangles.PushBack( Triangle );
+	};
+
 	if ( FaceIndexes.GetSize() == 3 )
 	{
-		Geo::TTriangle Triangle( FaceIndexes[0], FaceIndexes[1], FaceIndexes[2] );
-		Triangles.PushBack( Triangle );
+		MakeTriangle(0,1,2);
 		return;
 	}
 
 	if ( FaceIndexes.GetSize() == 4 )
 	{
-		Geo::TTriangle Triangle( FaceIndexes[0], FaceIndexes[1], FaceIndexes[2] );
-		Triangles.PushBack( Triangle );
-		Geo::TTriangle Triangleb( FaceIndexes[0], FaceIndexes[3], FaceIndexes[2] );
-		Triangles.PushBack( Triangle );
+		MakeTriangle(0,1,2);
+		MakeTriangle(0,3,2);
 		return;
 	}
 
@@ -93,10 +102,10 @@ void Alembic::ParseMesh(Geo::TNode& Node,AbcGeom::IPolyMesh& Mesh)
 		for ( int f=0;	f<Faces.GetSize();	f++ )
 		{
 			auto VertexCount = Faces[f];
-			//	check bounds here
-			auto FaceArray = GetRemoteArray( &AllIndexes[VertexIndex], VertexCount );
 
-			MakeTriangles( GetArrayBridge( Node.mTriangles ), GetArrayBridge(FaceArray) );
+			Soy::Assert( VertexCount <= AllIndexes.GetSize(), "Face vertex count has gone out of bounds");
+			auto FaceArray = GetRemoteArray( &AllIndexes[VertexIndex], VertexCount );
+			MakeTriangles( GetArrayBridge( Node.mTriangles ), GetArrayBridge(FaceArray), Node.mVertexPositions.GetSize() );
 
 			VertexIndex += VertexCount;
 		}

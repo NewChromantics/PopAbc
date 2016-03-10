@@ -2,66 +2,54 @@
 #include <Alembic/AbcCoreFactory/All.h>
 #include <SoyDebug.h>
 #include <SoyJson.h>
-#include <Alembic/abc/IObject.h>
 #include <HeapArray.hpp>
 #include <Alembic/abc/ICompoundProperty.h>
 #include <Alembic/AbcGeom/IPolyMesh.h>
 
-void GetMeta(std::map<std::string,std::string>& Meta,Alembic::Abc::IObject& Node)
+
+
+std::shared_ptr<Geo::TNode> Alembic::ParseGeo(Abc::IObject& Object)
 {
+	auto pNode = std::make_shared<Geo::TNode>();
+	auto& Node = *pNode;
+
 	using namespace Alembic::AbcGeom;
 
-	Meta["Name"] = Json::EscapeString( Node.getName() );
+	Node.mName = Object.getName();
 
+	//Meta["Name"] = Json::EscapeString( Node.getName() );
 	//	gr: full name appears just to be a path
 	//Meta["FullName"] = Node.getFullName();
 
-	auto Properties = Node.getProperties();
+	auto Properties = Object.getProperties();
 
 	auto PropertyCount = Properties.getNumProperties();
-	if ( PropertyCount > 0 )
+	for ( int i=0;	i<PropertyCount;	i++ )
 	{
-		TJsonWriter PropertyJson;
-		for ( int i=0;	i<PropertyCount;	i++ )
-		{
-			auto& Property = Properties.getPropertyHeader(i);
+		auto& Property = Properties.getPropertyHeader(i);
 
-			//	gr: to get value, need to cast and get() with a visitor pattern
-			//	Abc::IScalarProperty visible( props, "visible" );
-			std::stringstream PropertyValue;
-			PropertyValue << Property.getDataType();
-			PropertyJson.Push( Property.getName().c_str(), PropertyValue );
-		}
-		PropertyJson.Close();
+		//	gr: to get value, need to cast and get() with a visitor pattern
+		//	Abc::IScalarProperty visible( props, "visible" );
+		std::stringstream PropertyValue;
+		PropertyValue << Property.getDataType();
 
-		Meta["Properties"] = PropertyJson.mStream.str();
+		Node.mMeta[Property.getName()] = PropertyValue.str();
 	}
-	
+		
 	try
 	{
-		Meta["SchemaObject"] = Json::EscapeString( Node.getHeader().getMetaData().get("schemaObjTitle") );	
-		Meta["Schema"] = Json::EscapeString( Node.getHeader().getMetaData().get("schema") );	
+		Node.mMeta["SchemaObject"] = Object.getHeader().getMetaData().get("schemaObjTitle");	
+		Node.mMeta["Schema"] = Object.getHeader().getMetaData().get("schema");	
 	
 		//	am I a mesh?
-	    if ( IPolyMesh::matches( Node.getHeader() ) )
+	    if ( IPolyMesh::matches( Object.getHeader() ) )
 	    {
 			//	get as mesh
-	        IPolyMesh pmesh( Node, kWrapExisting );
+	        IPolyMesh pmesh( Object, kWrapExisting );
 		    if ( pmesh )
 			{
-			    // dptr.reset( new IPolyMeshDrw( pmesh ) );
-				Meta["PolyMesh"] = Json::ValueToString(true);
-			}
-		}
-	}
-	catch (std::exception& e)
-	{
-		std::stringstream Error;
-		Error << "Exception: " << e.what() << "; ";
-		Meta["Error"] = Json::EscapeString(Error.str());;
-	}
-
-		/*
+				/*
+				
 		   // Get the stuff.
     P3fArraySamplePtr P = psamp.getPositions();
     Int32ArraySamplePtr indices = psamp.getFaceIndices();
@@ -74,59 +62,31 @@ void GetMeta(std::map<std::string,std::string>& Meta,Alembic::Abc::IObject& Node
     {
         bounds = m_boundsProp.getValue( ss );
     }
-
-
-		IPolyMesh pmesh( Node );
-		//IPolyMesh pmesh( Node, ohead.getName() );
-		if ( pmesh )
-		{
-			p
+	*/
+			    // dptr.reset( new IPolyMeshDrw( pmesh ) );
+				Node.mMeta["PolyMesh"] = Json::ValueToString(true);
+			}
 		}
-		*/
-
-}
-
-
-
-std::string GetObjectJsonString(Alembic::Abc::IObject& Node)
-{
-	TJsonWriter Json;
-
-	std::map<std::string,std::string> Meta;
-	try
-	{
-		GetMeta( Meta, Node );
 	}
-	catch(std::exception& e)
+	catch (std::exception& e)
 	{
 		std::stringstream Error;
 		Error << "Exception: " << e.what() << "; ";
-		Meta["Error"] = Json::EscapeString( Error.str() );
+		Node.mMeta["Error"] = Error.str();
 	}
 
-	for ( auto it=Meta.begin();	it!=Meta.end();	it++ )
+	//	parse children 
+	for ( int i=0;	i<Object.getNumChildren();	i++ )
 	{
-		auto& Key = it->first;
-		auto& Value = it->second;
-		Json.PushJson(Key.c_str(), Value );
-	}
-	
-	
-	Array<std::string> ChildJsons;
-	for ( int i=0;	i<Node.getNumChildren();	i++ )
-	{
-		auto& Child = Node.getChild(i);
-		auto ChildJson = GetObjectJsonString( Child );
-		ChildJsons.PushBack( ChildJson );
+		auto& Child = Object.getChild(i);
+		auto pChildNode = ParseGeo( Child );
+		Soy::Assert( pChildNode!=nullptr, "not expecting null child geo");
+		Node.mChildren.PushBack( pChildNode );
 	}
 
-	if ( !ChildJsons.IsEmpty() )
-		Json.PushJson("Children", GetArrayBridge( ChildJsons ) );
-
-	Json.Close();
-
-	return Json.mStream.str();
+	return pNode;
 }
+
 
 
 Alembic::TArchive::TArchive(const TParserParams& Params) :
@@ -136,12 +96,112 @@ Alembic::TArchive::TArchive(const TParserParams& Params) :
 	
 	mArchiveReader = Factory.getArchive( Params.mFilename );
 	Soy::Assert( mArchiveReader.valid(), "Failed to create valid ABC archive reader");
+
+	//	start parsing
+	auto Future = std::async( [this]{ParseScene();} );
+	//mParsingFuture = Future;
+
+}
+
+
+Alembic::TArchive::~TArchive()
+{
+	//	wait for semaphore but dont throw
+	try
+	{
+		mSceneParsing.Wait();
+	}
+	catch(...)
+	{
+		std::Debug << "Exception waiting for Scene parsing to finish" << std::endl;
+	}
+
+	//	wait for future too (this should be covered by the semaphore?)
+	//mParsingFuture.Wait();
 }
 
 void Alembic::TArchive::GetMeta(std::stringstream& Stream)
 {
-	auto& Root = mArchiveReader.getTop();
-	auto Json = GetObjectJsonString( Root );
-	Stream << Json;
+	static bool Block = true;
+
+	if ( !Block )
+	{
+		//	gotta wait for the scene parsing to finish...
+		if ( !mSceneParsing.IsCompleted() )
+		{
+			TJsonWriter Json;
+			Json.Push("Error", "Not finished parsing");
+			Json.Close();
+			Stream << Json.mStream.str();
+			return;
+		}
+	}
+
+	//	catch the parsing error if there was one
+	try
+	{
+		mSceneParsing.Wait();
+		Soy::Assert(mScene!=nullptr, "Expected scene");
+
+		TJsonWriter Json;
+		GetMeta( *mScene, Json );
+		Json.Close();
+		Stream << Json.mStream.str();
+		return;
+	}
+	catch(std::exception& e)
+	{
+		TJsonWriter Json;
+		Json.Push("Error", e.what() );
+		Json.Close();
+		Stream << Json.mStream.str();
+		return;
+	}
 }
+
+void Alembic::TArchive::ParseScene()
+{
+	try
+	{
+		auto& Root = mArchiveReader.getTop();
+		mScene = ParseGeo( Root );
+		mSceneParsing.OnCompleted();
+	}
+	catch(std::exception& e)
+	{
+		mSceneParsing.OnFailed( e.what() );
+	}
+}
+
+
+
+void Alembic::TArchive::GetMeta(Geo::TNode& Node,TJsonWriter& Json)
+{
+	Json.Push("Name", Node.mName );
+	Json.Push("Bounds", Node.mBounds );
+	//Json.Push("Transform", Node.mTransform);
+
+	for ( auto it=Node.mMeta.begin();	it!=Node.mMeta.end();	it++ )
+	{
+		auto& Key = it->first;
+		auto& Value = it->second;
+		Json.Push( Key.c_str(), Value );
+	}
+
+	//	write children
+	Array<std::string> ChildJsons;
+	for ( int i=0;	i<Node.mChildren.GetSize();	i++ )
+	{
+		auto& Child = *Node.mChildren[i];
+		TJsonWriter ChildJson;
+		GetMeta( Child, ChildJson );
+		ChildJson.Close();
+		ChildJsons.PushBack( ChildJson.mStream.str() );
+	}
+
+	if ( !ChildJsons.IsEmpty() )
+		Json.PushJson("Children", GetArrayBridge( ChildJsons ) );
+}
+
+
 

@@ -370,4 +370,29 @@ void Alembic::TArchive::GetMeta(Geo::TNode& Node,TJsonWriter& Json)
 }
 
 
+std::shared_ptr<Geo::TNode> MatchNode(std::shared_ptr<Geo::TNode>& Node,const std::string& MatchName)
+{
+	if ( !Node )
+		return nullptr;
+
+	if ( Node->mName == MatchName )
+		return Node;
+		
+	for ( int c=0;	c<Node->mChildren.GetSize();	c++ )
+	{
+		auto Child = Node->mChildren[c];
+		auto Match = MatchNode( Child, MatchName );
+		if ( Match )
+			return Match;
+	}
+
+	return nullptr;
+}
+
+std::shared_ptr<Geo::TNode> Alembic::TArchive::GetNode(const std::string& NodeName)
+{
+	return MatchNode( mScene, NodeName );
+}
+
+
 

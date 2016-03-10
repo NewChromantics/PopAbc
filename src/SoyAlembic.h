@@ -25,10 +25,12 @@ public:
 	TArchive(const TParserParams& Params);
 	~TArchive();
 	
+	virtual std::shared_ptr<Geo::TNode>	GetNode(const std::string& NodeName) override;
 	virtual void	GetMeta(std::stringstream& Meta) override;
 	void			GetMeta(Geo::TNode& Node,TJsonWriter& Json);
 
 	void			ParseScene();
+
 
 public:
 	Abc::IArchive	mArchiveReader;

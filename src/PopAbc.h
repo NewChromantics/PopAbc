@@ -17,6 +17,15 @@ __export const char*	PopAbc_GetMeta(Unity::ulong Instance);
 __export void			PopAbc_ReleaseString(const char* String);
 
 
+__export Unity::sint			PopAbc_GetVertexCount(Unity::ulong Instance,const char* NodeName);
+__export Unity::sint			PopAbc_GetTriangleCount(Unity::ulong Instance,const char* NodeName);
+__export const Unity::Float*	PopAbc_LockVertexes(Unity::ulong Instance,const char* NodeName);
+__export const Unity::sint*		PopAbc_LockTriangles(Unity::ulong Instance,const char* NodeName);
+__export void					PopAbc_UnlockVertexes(const Unity::Float* Vertexes);
+__export void					PopAbc_UnlockTriangles(const Unity::sint* Triangles);
+	
+
+
 namespace PopAbc
 {
 	class TInstance;
@@ -40,9 +49,8 @@ public:
 	
 	TInstanceRef	GetRef() const		{	return mRef;	}
 
-	void			PushTexture(Opengl::TTexture Texture);
-	void			PopData(std::stringstream& Data);
 	void			GetMeta(std::stringstream& Meta);
+	Geo::TNode&		GetNode(const std::string& NodeName);
 	
 public:
 	std::shared_ptr<Opengl::TContext>	mOpenglContext;

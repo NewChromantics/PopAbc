@@ -3,73 +3,222 @@
 #include "SoyAlembic.h"
 
 
-class TStringManager;
+template<typename TYPE,typename EXTERNALTYPE>
+class TExternalLockManager
+{
+public:
+	TExternalLockManager() :
+		mHeap		( true, true, "TExternalLockManager" ),
+		mElements	( mHeap )
+	{
+	}
 
+	const EXTERNALTYPE*					Lock(const TYPE& Item);
+	void								Unlock(const EXTERNALTYPE* Element);
+
+public:
+	prmem::Heap							mHeap;
+	std::mutex							mElementsLock;
+	Array<TYPE>							mElements;
+};
+
+template<typename EXTERNALTYPE,typename TYPE>
+const EXTERNALTYPE* ExternalLockCast(const TYPE& Item)
+{
+	throw Soy::AssertException("Unhandled case");
+}
+
+template<>
+const char* ExternalLockCast<char>(const std::string& Item)
+{
+	return Item.c_str();
+}
+
+template<>
+const float* ExternalLockCast<float>(const std::shared_ptr<Array<vec3f>>& Item)
+{
+	return &Item->GetArray()->x;
+}
+
+template<>
+const Unity::sint* ExternalLockCast<Unity::sint>(const std::shared_ptr<Array<Geo::TTriangle>>& Item)
+{
+	return &Item->GetArray()->x;
+}
+
+bool operator==(const std::shared_ptr<Array<vec3f>>& Array,const float* ArrayRef)
+{
+	return &Array->GetArray()->x == ArrayRef;
+}
+
+bool operator==(const std::shared_ptr<Array<Geo::TTriangle>>& Array,const Unity::sint* ArrayRef)
+{
+	return &Array->GetArray()->x == ArrayRef;
+}
 
 namespace PopAbc
 {
 	std::mutex gInstancesLock;
 	std::vector<std::shared_ptr<PopAbc::TInstance> >	gInstances;
 
-	std::shared_ptr<TStringManager>		gStringManager;
-	TStringManager&						GetStringManager();
+	std::shared_ptr<TExternalLockManager<std::string,char>>						gStringManager;
+	std::shared_ptr<TExternalLockManager<std::shared_ptr<Array<vec3f>>,float>>					gVertexArrayManager;
+	std::shared_ptr<TExternalLockManager<std::shared_ptr<Array<Geo::TTriangle>>,Unity::sint>>	gTriangleArrayManager;
+
+	TExternalLockManager<std::string,char>&										GetStringManager();
+	TExternalLockManager<std::shared_ptr<Array<vec3f>>,float>&					GetVertexArrayManager();
+	TExternalLockManager<std::shared_ptr<Array<Geo::TTriangle>>,Unity::sint>&	GetTriangleArrayManager();
 };
 
 
 
-class TStringManager
-{
-public:
-	TStringManager() :
-		mHeap		( true, true, "StringManager" ),
-		mStrings	( mHeap )
-	{
-	}
-
-	const char*							LockString(const std::string& String);
-	void								UnlockString(const char* String);
-
-public:
-	prmem::Heap							mHeap;
-	std::mutex							mStringsLock;
-	Array<std::string>					mStrings;
-};
-
-
-
-TStringManager& PopAbc::GetStringManager()
+TExternalLockManager<std::string,char>& PopAbc::GetStringManager()
 {
 	if ( !gStringManager )
-		gStringManager.reset( new TStringManager );
+		gStringManager.reset( new TExternalLockManager<std::string,char>() );
 	return *gStringManager;
 }
 
-const char* TStringManager::LockString(const std::string& String)
+TExternalLockManager<std::shared_ptr<Array<vec3f>>,float>& PopAbc::GetVertexArrayManager()
 {
-	std::lock_guard<std::mutex> Lock( mStringsLock );
-	
-	auto& NewString = mStrings.PushBack( String );
-	return NewString.c_str();
+	if ( !gVertexArrayManager )
+		gVertexArrayManager.reset( new TExternalLockManager<std::shared_ptr<Array<vec3f>>,float>() );
+	return *gVertexArrayManager;
 }
 
-void TStringManager::UnlockString(const char* String)
+TExternalLockManager<std::shared_ptr<Array<Geo::TTriangle>>,Unity::sint>& PopAbc::GetTriangleArrayManager()
 {
-	std::lock_guard<std::mutex> Lock( mStringsLock );
+	if ( !gTriangleArrayManager )
+		gTriangleArrayManager.reset( new TExternalLockManager<std::shared_ptr<Array<Geo::TTriangle>>,Unity::sint>() );
+	return *gTriangleArrayManager;
+}
 
-	auto Index = mStrings.FindIndex( String );
+
+template<typename TYPE,typename EXTERNALTYPE>
+const EXTERNALTYPE* TExternalLockManager<TYPE,EXTERNALTYPE>::Lock(const TYPE& Item)
+{
+	std::lock_guard<std::mutex> Lock( mElementsLock );
+	
+	auto& NewItem = mElements.PushBack( Item );
+	return ExternalLockCast<EXTERNALTYPE>(NewItem);
+}
+
+template<typename TYPE,typename EXTERNALTYPE>
+void TExternalLockManager<TYPE,EXTERNALTYPE>::Unlock(const EXTERNALTYPE* Element)
+{
+	std::lock_guard<std::mutex> Lock( mElementsLock );
+
+	auto Index = mElements.FindIndex( Element );
 	if ( Index == -1 )
 		return;
 
-	mStrings.RemoveBlock( Index, 1 );
+	mElements.RemoveBlock( Index, 1 );
 }
 
 
 __export void PopAbc_ReleaseString(const char* String)
 {
 	auto& StringManager = PopAbc::GetStringManager();
-	StringManager.UnlockString( String );
+	StringManager.Unlock( String );
 }
 
+
+Geo::TNode& GetNode(Unity::ulong Instance,const char* NodeName)
+{
+	auto pInstance  = PopAbc::GetInstance( Instance );
+	Soy::Assert( pInstance!=nullptr, "Instance not found");
+	Soy::Assert( NodeName, "null node name");
+	return pInstance->GetNode( NodeName );
+}
+
+__export Unity::sint		PopAbc_GetVertexCount(Unity::ulong Instance,const char* NodeName)
+{
+	try
+	{
+		auto& Node = GetNode( Instance, NodeName );
+		return Node.mVertexPositions.GetSize();
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return -1;
+	}
+}
+
+__export Unity::sint		PopAbc_GetTriangleCount(Unity::ulong Instance,const char* NodeName)
+{
+	try
+	{
+		auto& Node = GetNode( Instance, NodeName );
+		return Node.mTriangles.GetSize();
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return -1;
+	}
+}
+
+__export const Unity::Float*		PopAbc_LockVertexes(Unity::ulong Instance,const char* NodeName)
+{
+	try
+	{
+		auto& Node = GetNode( Instance, NodeName );
+		auto& VertexPositions = Node.GetVertexPositionsPtr();
+		if ( VertexPositions->IsEmpty() )
+			return nullptr;
+		return PopAbc::GetVertexArrayManager().Lock( VertexPositions );
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return nullptr;
+	}
+}
+
+__export const Unity::sint*		PopAbc_LockTriangles(Unity::ulong Instance,const char* NodeName)
+{
+	try
+	{
+		auto& Node = GetNode( Instance, NodeName );
+		auto& Triangles = Node.GetTrianglesPtr();
+		if ( Triangles->IsEmpty() )
+			return nullptr;
+		return PopAbc::GetTriangleArrayManager().Lock( Triangles );
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return nullptr;
+	}
+}
+
+__export void				PopAbc_UnlockVertexes(const Unity::Float* Vertexes)
+{
+	try
+	{
+		return PopAbc::GetVertexArrayManager().Unlock( Vertexes );
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return;
+	}
+}
+
+__export void				PopAbc_UnlockTriangles(const Unity::sint* Triangles)
+{
+	try
+	{
+		return PopAbc::GetTriangleArrayManager().Unlock( Triangles );
+	}
+	catch(std::exception& e)
+	{
+		std::Debug << __func__ << " exception: " << e.what() << std::endl;
+		return;
+	}
+}
+	
 
 
 
@@ -104,75 +253,6 @@ __export bool	PopAbc_Free(Unity::ulong Instance)
 {
 	ofScopeTimerWarning Timer(__func__, Unity::mMinTimerMs );
 	return PopAbc::Free( Instance );
-}
-
-
-
-__export bool	PopAbc_PushRenderTexture(Unity::ulong Instance,Unity::NativeTexturePtr TextureId,Unity::sint Width,Unity::sint Height,Unity::RenderTexturePixelFormat::Type PixelFormat)
-{
-	auto pInstance = PopAbc::GetInstance( Instance );
-	if ( !pInstance )
-		return false;
-
-	try
-	{
-		//	assuming type atm... maybe we can extract it via opengl?
-		SoyPixelsMeta Meta( Width, Height, Unity::GetPixelFormat( PixelFormat ) );
-		GLenum Type = GL_TEXTURE_2D;
-		Opengl::TTexture Texture( TextureId, Meta, Type );
-		pInstance->PushTexture( Texture );
-		return true;
-	}
-	catch(std::exception& e)
-	{
-		std::Debug << __func__ << " failed: " << e.what() << std::endl;
-		return false;
-	}
-}
-
-
-__export bool	PopAbc_PushTexture2D(Unity::ulong Instance,Unity::NativeTexturePtr TextureId,Unity::sint Width,Unity::sint Height,Unity::Texture2DPixelFormat::Type PixelFormat)
-{
-	auto pInstance = PopAbc::GetInstance( Instance );
-	if ( !pInstance )
-		return false;
-	
-	try
-	{
-		//	assuming type atm... maybe we can extract it via opengl?
-		SoyPixelsMeta Meta( Width, Height, Unity::GetPixelFormat( PixelFormat ) );
-		GLenum Type = GL_TEXTURE_2D;
-		Opengl::TTexture Texture( TextureId, Meta, Type );
-		pInstance->PushTexture( Texture );
-		return true;
-	}
-	catch(std::exception& e)
-	{
-		std::Debug << __func__ << " failed: " << e.what() << std::endl;
-		return false;
-	}
-}
-
-__export Unity::sint		PopAbc_PopData(Unity::ulong Instance,char* Buffer,Unity::uint BufferSize)
-{
-	auto pInstance = PopAbc::GetInstance( Instance );
-	if ( !pInstance )
-		return -1;
-
-	try
-	{
-		std::stringstream Data;
-		pInstance->PopData( Data );
-		
-		Soy::StringToBuffer( Data.str(), Buffer, BufferSize );
-		
-		return size_cast<Unity::sint>( Data.str().length() );
-	}
-	catch(std::exception& e)
-	{
-		std::Debug << __func__ << " failed: " << e.what() << std::endl;
-		return -1;
-	}
 }
 
 
@@ -236,22 +316,21 @@ PopAbc::TInstance::TInstance(const TInstanceRef& Ref,TParserParams Params,std::s
 	mParser.reset( new Alembic::TArchive( Params ) );
 }
 
-void PopAbc::TInstance::PushTexture(Opengl::TTexture Texture)
-{
-	throw Soy::AssertException("todo");
-}
-
-
-void PopAbc::TInstance::PopData(std::stringstream& Data)
-{
-	throw Soy::AssertException("todo");
-}
-
 void PopAbc::TInstance::GetMeta(std::stringstream& Meta)
 {
 	Soy::Assert( mParser!=nullptr, "Parser expected");
 
 	mParser->GetMeta( Meta );
+}
+
+
+Geo::TNode& PopAbc::TInstance::GetNode(const std::string& NodeName)
+{
+	Soy::Assert( mParser!=nullptr, "Parser expected");
+	auto pNode = mParser->GetNode( NodeName );
+	Soy::Assert( pNode!=nullptr, "Node not found");
+
+	return *pNode;
 }
 
 
@@ -268,7 +347,7 @@ __export const char*	PopAbc_GetMeta(Unity::ulong Instance)
 		pInstance->GetMeta( Meta );
 
 		auto& StringManager = PopAbc::GetStringManager();
-		return StringManager.LockString( Meta.str() );
+		return StringManager.Lock( Meta.str() );
 	}
 	catch(std::exception& e)
 	{

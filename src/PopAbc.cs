@@ -3,7 +3,7 @@ using System.Collections;					// required for Coroutines
 using System.Runtime.InteropServices;		// required for DllImport
 using System;								// requred for IntPtr
 using System.Text;							//	required for string builder
-
+using System.Collections.Generic;
 
 public class PopAbc
 {
@@ -81,6 +81,27 @@ public class PopAbc
 
 	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
 	private static extern void		PopAbc_ReleaseString(string Str);
+
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern int		PopAbc_GetVertexCount(ulong Instance,string NodeName);
+	
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern int		PopAbc_GetTriangleCount(ulong Instance,string NodeName);
+	
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern float[]	PopAbc_LockVertexes(ulong Instance,string NodeName);
+	
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern int[]		PopAbc_LockTriangles(ulong Instance,string NodeName);
+	
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern void		PopAbc_UnlockVertexes(float[] Vertexes);
+	
+	[DllImport(PluginName, CallingConvention = CallingConvention.Cdecl)]
+	private static extern void		PopAbc_UnlockTriangles(int[] Triangles);
+	
+
+
 
 	public PopAbc(String Filename)
 	{
@@ -188,5 +209,37 @@ public class PopAbc
 		return MetaString;
 	}
 
+
+	private Mesh CreateMesh(float[] Vertexes,int VertexCount,int[] TriangleIndexes,int TriangleCount)
+	{
+		Mesh mesh = new Mesh ();
+
+		List<Vector3> Vertex3s = new List<Vector3> ();
+		for (int i=0; i<VertexCount; i++) {
+			int va = (i * 3) + 0;
+			int vb = (i * 3) + 1;
+			int vc = (i * 3) + 2;
+			Vertex3s.Add (new Vector3 (Vertexes [va], Vertexes [vb], Vertexes [vc]));
+		}
+				
+		mesh.SetVertices (Vertex3s);
+		mesh.SetTriangles (TriangleIndexes, 0); 
+		return mesh;
+	}
+
+	public Mesh LoadMesh(string NodeName,float time)
+	{
+		int VertexCount = PopAbc_GetVertexCount (mInstance, NodeName);
+		int TriangleCount = PopAbc_GetTriangleCount (mInstance, NodeName);
+		float[] Vertexes = PopAbc_LockVertexes (mInstance, NodeName);
+		int[] TriangleIndexes = PopAbc_LockTriangles (mInstance, NodeName);
+
+		var mesh = CreateMesh( Vertexes, VertexCount, TriangleIndexes, TriangleCount );
+
+		PopAbc_UnlockVertexes (Vertexes);
+		PopAbc_UnlockTriangles (TriangleIndexes);
+	
+	    return mesh;
+	}
 }
 

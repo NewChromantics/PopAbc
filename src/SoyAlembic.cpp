@@ -50,15 +50,15 @@ void GetMeta(std::map<std::string,std::string>& Meta,Alembic::Abc::IObject& Node
 		    if ( pmesh )
 			{
 			    // dptr.reset( new IPolyMeshDrw( pmesh ) );
-				Meta["PolyMesh"] = "true";
+				Meta["PolyMesh"] = Json::ValueToString(true);
 			}
 		}
 	}
 	catch (std::exception& e)
 	{
-		Meta["Error"] += "Exception: ";
-		Meta["Error"] += e.what();
-		Meta["Error"] += "; ";
+		std::stringstream Error;
+		Error << "Exception: " << e.what() << "; ";
+		Meta["Error"] = Json::EscapeString(Error.str());;
 	}
 
 		/*
@@ -99,14 +99,16 @@ std::string GetObjectJsonString(Alembic::Abc::IObject& Node)
 	}
 	catch(std::exception& e)
 	{
-		Meta["Error"] += "Exception: ";
-		Meta["Error"] += e.what();
-		Meta["Error"] += "; ";
+		std::stringstream Error;
+		Error << "Exception: " << e.what() << "; ";
+		Meta["Error"] = Json::EscapeString( Error.str() );
 	}
 
 	for ( auto it=Meta.begin();	it!=Meta.end();	it++ )
 	{
-		Json.PushJson( it->first.c_str(), it->second );
+		auto& Key = it->first;
+		auto& Value = it->second;
+		Json.PushJson(Key.c_str(), Value );
 	}
 	
 	

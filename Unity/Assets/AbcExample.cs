@@ -11,6 +11,18 @@ public class AbcExample : MonoBehaviour {
 	PopAbc			mAbc;
 
 
+	void CreateMesh(string NodeName)
+	{
+		Mesh NewMesh = mAbc.LoadMesh (NodeName,0);
+
+		GameObject Child = new GameObject (NodeName);
+		if (NewMesh != null) {
+			MeshFilter MeshComponent = Child.AddComponent<MeshFilter>();
+			MeshComponent.mesh = NewMesh;
+			Child.transform.SetParent( this.transform );
+		}
+	}
+
 	void OnError(string Error)
 	{
 		Debug.LogError( Error );
@@ -34,6 +46,8 @@ public class AbcExample : MonoBehaviour {
 
 		string Meta = mAbc.GetMeta();
 		Debug.Log ("Meta is " + Meta);
+
+		CreateMesh ("octopus_lowShape");
 	}
 
 	void Update()
